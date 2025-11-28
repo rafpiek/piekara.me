@@ -35,8 +35,8 @@ export default function BottomTabBar() {
       // For anchor links, check if we're on the homepage and the hash matches
       return pathname === "/" && hash === "#social";
     } else if (item.href === "/") {
-      // For home page, only active if on homepage WITHOUT any hash (especially not #social)
-      return pathname === "/" && hash === "";
+      // For home page, active when on homepage and NOT on #social section
+      return pathname === "/" && hash !== "#social";
     } else {
       // For other pages, check if pathname starts with the href
       return pathname.startsWith(item.href);
