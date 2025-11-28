@@ -46,7 +46,12 @@ export default function Home() {
     <>
       <Hero />
 
-      <SectionTitle>Commercial Apps</SectionTitle>
+      <SectionTitle>
+        <span>Apps</span>
+        <a href="/apps" className="text-sm text-[var(--accent)] hover:underline ml-4">
+          See more →
+        </a>
+      </SectionTitle>
       <div className="app-grid" id="apps">
         {apps.map((app) => (
           <AppCard key={app.title} {...app} />
