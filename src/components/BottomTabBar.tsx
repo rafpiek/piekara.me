@@ -28,7 +28,7 @@ export default function BottomTabBar() {
               href={item.href}
               className={`flex flex-col items-center gap-1 px-3 py-2 rounded-lg transition-colors ${
                 isActive
-                  ? "text-[var(--accent)]"
+                  ? "text-red-500"
                   : "text-[var(--text-muted)] hover:text-[var(--text)]"
               }`}
             >
