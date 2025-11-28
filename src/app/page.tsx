@@ -59,7 +59,7 @@ export default function Home() {
         ))}
       </div>
 
-      <SectionTitle id="projects">Side Projects</SectionTitle>
+      <SectionTitle id="projects">I'm currently working on</SectionTitle>
       <div className="project-list">
         {projects.map((project) => (
           <ProjectItem key={project.name} {...project} />
