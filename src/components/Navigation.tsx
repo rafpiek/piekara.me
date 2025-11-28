@@ -13,20 +13,20 @@ export default function Navigation() {
   ];
 
   return (
-    <header>
-      <Link href="/" className="logo">
-        piekara<span className="highlight">.me</span>
+    <header className="py-10 flex justify-between items-center">
+      <Link href="/" className="font-[family-name:var(--font-head)] text-xl font-semibold tracking-tight">
+        piekara<span className="text-[var(--accent)]">.me</span>
       </Link>
-      <nav className="nav-links hidden md:flex">
+      <nav className="hidden md:flex gap-6">
         {navItems.map((item) => (
           <Link
             key={item.href}
             href={item.href}
-            className={
+            className={`text-sm transition-colors ${
               pathname.startsWith(item.href)
                 ? "text-[var(--text)]"
-                : ""
-            }
+                : "text-[var(--text-muted)] hover:text-[var(--text)]"
+            }`}
           >
             {item.label}
           </Link>

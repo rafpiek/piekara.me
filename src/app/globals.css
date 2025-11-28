@@ -31,8 +31,6 @@
 }
 
 /* --- BASE --- */
-* { box-sizing: border-box; margin: 0; padding: 0; }
-
 body {
   background-color: var(--bg);
   color: var(--text);
@@ -48,13 +46,6 @@ a {
   transition: color 0.2s ease;
 }
 
-/* --- LAYOUT --- */
-.wrapper {
-  max-width: var(--container);
-  margin: 0 auto;
-  padding: 0 24px;
-}
-
 /* --- TYPOGRAPHY --- */
 h1, h2, h3 {
   font-family: var(--font-head);
@@ -63,220 +54,89 @@ h1, h2, h3 {
 }
 
 .highlight {
-  color: var(--accent);
-}
-
-/* --- HEADER --- */
-header {
-  padding: 40px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  font-family: var(--font-head);
-  font-size: 1.25rem;
-  font-weight: 600;
-  letter-spacing: -0.02em;
-}
-
-.nav-links a {
-  margin-left: 24px;
-  font-size: 0.9rem;
-  color: var(--text-muted);
-}
-.nav-links a:hover { color: var(--text); }
-
-/* --- HERO --- */
-.hero {
-  padding: 80px 0 100px;
-  max-width: 800px;
-}
-
-.hero h1 {
-  font-size: clamp(2.5rem, 5vw, 4rem);
-  margin-bottom: 24px;
-}
-
-.hero p {
-  font-size: 1.25rem;
-  color: var(--text-muted);
-  max-width: 600px;
-}
-
-/* --- SECTIONS --- */
-.section-title {
-  font-size: 1.5rem;
-  margin-bottom: 32px;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.section-title::after {
-  content: '';
-  height: 1px;
-  background: #333;
-  flex-grow: 1;
+  @apply text-[var(--accent)];
 }
 
 /* --- APP GRID (The Money Makers) --- */
 .app-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 24px;
-  margin-bottom: 80px;
+  @apply grid grid-cols-[repeat(auto-fit,minmax(320px,1fr))] gap-6 mb-20;
 }
 
 .app-card {
-  background-color: var(--surface);
-  border-radius: var(--radius);
-  padding: 32px;
-  transition: background 0.2s ease, transform 0.2s ease;
-  display: flex;
-  flex-direction: column;
-  border: 1px solid rgba(255,255,255,0.05); /* Very subtle border */
-}
-
-.app-card:hover {
-  background-color: var(--surface-hover);
-  transform: translateY(-2px);
-  border-color: rgba(255,255,255,0.1);
+  @apply bg-[var(--surface)] rounded-lg p-8 flex flex-col border border-white/5 transition-all duration-200 hover:bg-[var(--surface-hover)] hover:-translate-y-0.5 hover:border-white/10;
 }
 
 .app-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: start;
-  margin-bottom: 16px;
+  @apply flex justify-between items-start mb-4;
 }
 
 .app-icon {
-  width: 48px;
-  height: 48px;
-  background-color: rgba(217, 29, 65, 0.1); /* Low opacity red */
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--accent);
-  font-family: var(--font-head);
-  font-weight: bold;
-  font-size: 1.2rem;
+  @apply w-12 h-12 bg-[var(--accent)]/10 rounded-lg flex items-center justify-center text-[var(--accent)] font-bold text-xl;
 }
 
 .app-price {
-  font-size: 0.9rem;
-  background: #2a2a2a;
-  padding: 4px 10px;
-  border-radius: 4px;
-  color: var(--text-muted);
+  @apply text-sm bg-[#2a2a2a] px-2.5 py-1 rounded text-[var(--text-muted)];
 }
 
 .app-card h3 {
-  font-size: 1.25rem;
-  margin-bottom: 8px;
+  @apply text-xl mb-2;
 }
 
 .app-card p {
-  color: var(--text-muted);
-  font-size: 0.95rem;
-  margin-bottom: 24px;
-  flex-grow: 1;
+  @apply text-[var(--text-muted)] text-[0.95rem] mb-6 flex-grow;
 }
 
 .app-link {
-  font-size: 0.9rem;
-  font-weight: 500;
-  color: var(--text);
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
+  @apply text-sm font-medium inline-flex items-center gap-1.5 hover:text-[var(--accent)] transition-colors;
 }
-
-.app-link:hover { color: var(--accent); }
 
 /* --- PROJECT LIST (Quick List) --- */
 .project-list {
-  margin-bottom: 80px;
+  @apply mb-20;
 }
 
 .project-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 0;
-  border-bottom: 1px solid #222;
+  @apply flex justify-between items-center py-5 border-b border-[#222];
 }
 
 .project-item:hover .project-name {
-  color: var(--accent);
+  @apply text-[var(--accent)];
 }
 
 .project-name {
   font-family: var(--font-head);
-  font-size: 1.1rem;
-  transition: color 0.2s;
+  @apply text-lg transition-colors;
 }
 
 .project-desc {
-  color: var(--text-muted);
-  font-size: 0.9rem;
-  text-align: right;
+  @apply text-[var(--text-muted)] text-sm text-right;
 }
 
 /* --- LEGAL HUB (Clean & Searchable vibe) --- */
 .legal-section {
-  background-color: var(--surface);
-  border-radius: var(--radius);
-  padding: 40px;
-  margin-bottom: 80px;
+  @apply bg-[var(--surface)] rounded-lg p-10 mb-20;
 }
 
 .legal-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 40px;
-  margin-top: 32px;
+  @apply grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-10 mt-8;
 }
 
 .legal-col h4 {
-  font-size: 0.9rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: var(--text-muted);
-  margin-bottom: 16px;
+  @apply text-sm uppercase tracking-wider text-[var(--text-muted)] mb-4;
 }
 
-.legal-col ul { list-style: none; }
+.legal-col ul { @apply list-none; }
 
-.legal-col li { margin-bottom: 10px; }
+.legal-col li { @apply mb-2.5; }
 
 .legal-col a {
-  color: var(--text);
-  font-size: 0.95rem;
-  opacity: 0.8;
-}
-
-.legal-col a:hover { opacity: 1; color: var(--accent); }
-
-/* --- FOOTER --- */
-footer {
-  margin-top: 64px;
-  padding: 40px 0;
-  border-top: 1px solid #222;
-  color: var(--text-muted);
-  font-size: 0.9rem;
-  display: flex;
-  justify-content: space-between;
+  @apply text-[0.95rem] opacity-80 hover:opacity-100 hover:text-[var(--accent)] transition-all;
 }
 
 /* Mobile tweaks */
 @media (max-width: 600px) {
-  .hero h1 { font-size: 2.5rem; }
-  .project-item { flex-direction: column; align-items: flex-start; gap: 8px; }
-  .project-desc { text-align: left; }
+  .project-item { @apply flex-col items-start gap-2; }
+  .project-desc { @apply text-left; }
 }
 
 /* --- MARKDOWN CONTENT --- */

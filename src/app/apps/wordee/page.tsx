@@ -78,7 +78,7 @@ export default function Wordee() {
             <p className="text-xl text-[var(--text-muted)] mb-8 leading-relaxed">
               An English dictionary on your terms. Learn specific words by taking pictures of textbooks and starting effective learning immediately.
             </p>
-            
+
             {/* Badges */}
             <div className="flex flex-wrap gap-3 mb-10">
               <div className="flex items-center px-4 py-2 rounded-full bg-[var(--surface)]">
@@ -121,7 +121,7 @@ export default function Wordee() {
         </div>
 
         {/* FEATURES GRID */}
-        <h2 className="section-title">Key Features</h2>
+        <h2 className="text-2xl mb-8 flex items-center gap-3 after:content-[''] after:h-px after:bg-[#333] after:flex-grow">Key Features</h2>
         <div className="app-grid">
           {features.map((feature, index) => (
             <div key={index} className="app-card">
@@ -159,7 +159,7 @@ export default function Wordee() {
         </div>
 
         {/* SCREENSHOTS */}
-        <h2 className="section-title">App Screenshots</h2>
+        <h2 className="text-2xl mb-8 flex items-center gap-3 after:content-[''] after:h-px after:bg-[#333] after:flex-grow">App Screenshots</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
           {screenshots.map((screenshot, index) => (
             <div
@@ -184,7 +184,7 @@ export default function Wordee() {
 
         {/* TECH STACK */}
         <div className="mb-24">
-          <h2 className="section-title">Built With</h2>
+          <h2 className="text-2xl mb-8 flex items-center gap-3 after:content-[''] after:h-px after:bg-[#333] after:flex-grow">Built With</h2>
           <div className="flex flex-wrap gap-3">
             {techStack.map((tech) => (
               <span

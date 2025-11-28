@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <div className="wrapper">
+        <div className="max-w-[1100px] mx-auto px-6">
           <Navigation />
           {children}
           <Footer />

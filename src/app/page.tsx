@@ -4,11 +4,11 @@ export default function Home() {
   return (
     <>
       {/* HERO */}
-      <section className="hero">
-        <h1>
+      <section className="py-20 pb-24 max-w-[800px]">
+        <h1 className="text-[clamp(2.5rem,5vw,4rem)] mb-6">
           I build apps, teach Rails, and occasionally <span className="highlight">break production.</span>
         </h1>
-        <p>
+        <p className="text-xl text-[var(--text-muted)] max-w-[600px]">
           Hi, I&apos;m Rafał Piekara. Welcome to my digital HQ.
           This is where I ship my commercial products, host my creative projects,
           and keep the lawyers happy.
@@ -16,7 +16,7 @@ export default function Home() {
       </section>
 
       {/* APPS (Commercial) */}
-      <h2 className="section-title">Commercial Apps</h2>
+      <h2 className="text-2xl mb-8 flex items-center gap-3 after:content-[''] after:h-px after:bg-[#333] after:flex-grow">Commercial Apps</h2>
       <div className="app-grid" id="apps">
 
         {/* App 1 - Tapaterra */}
@@ -61,7 +61,7 @@ export default function Home() {
       </div>
 
       {/* PROJECTS (Side Projects) */}
-      <h2 className="section-title" id="projects">Side Projects</h2>
+      <h2 className="text-2xl mb-8 flex items-center gap-3 after:content-[''] after:h-px after:bg-[#333] after:flex-grow" id="projects">Side Projects</h2>
       <div className="project-list">
         <Link href="/projects" className="project-item">
           <span className="project-name">Development Approach & Skills</span>
