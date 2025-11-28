@@ -1,60 +1,36 @@
-@import "tailwindcss";
-
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Grotesk:wght@400;600&display=swap');
 
-:root {
-  /* --- DESIGN SYSTEM COLORS --- */
-  --bg: #0a0a0a;         /* Deepest Black - Main background */
-  --surface: #171717;    /* Subtle separation for cards */
-  --surface-hover: #222222;
-
-  --text: #ededed;       /* Primary text */
-  --text-muted: #888888; /* Secondary/subtle text */
-
-  /* The Ruby Personality */
-  --accent: #D91D41;     /* Ruby Red - Strong but not neon */
-
-  --font-head: 'Space Grotesk', sans-serif;
-  --font-body: 'Inter', sans-serif;
-
-  --radius: 8px;         /* Subtle rounding (Professional, not bubbly) */
-  --container: 1100px;
-
-  /* Tailwind compatibility */
-  --background: var(--bg);
-  --foreground: var(--text);
-  --muted: var(--surface);
-  --muted-foreground: var(--text-muted);
-  --accent: var(--accent);
-  --accent-foreground: var(--text);
-  --card: var(--surface);
-  --card-foreground: var(--text);
-  --border: rgba(255,255,255,0.05);
-  --ring: var(--accent);
-}
+@import "tailwindcss";
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-muted: var(--muted);
-  --color-muted-foreground: var(--muted-foreground);
-  --color-accent: var(--accent);
-  --color-accent-foreground: var(--accent-foreground);
-  --color-card: var(--card);
-  --color-card-foreground: var(--card-foreground);
-  --color-border: var(--border);
-  --color-ring: var(--ring);
+  --color-background: var(--bg);
+  --color-foreground: var(--text);
   --font-sans: var(--font-body);
   --font-mono: var(--font-body);
 }
 
-* {
-  border-color: var(--border);
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+/* --- VARIABLES --- */
+:root {
+  --bg: #0a0a0a;         /* Deepest Black */
+  --surface: #171717;    /* Subtle separation for cards */
+  --surface-hover: #222222;
+  
+  --text: #ededed;
+  --text-muted: #888888;
+  
+  /* The Ruby Personality */
+  --accent: #D91D41;     /* Ruby Red - Strong but not neon */
+  
+  --font-head: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  
+  --radius: 8px;         /* Subtle rounding (Professional, not bubbly) */
+  --container: 1100px;
 }
+
+/* --- BASE --- */
+* { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
   background-color: var(--bg);
@@ -65,14 +41,6 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* --- BASE TYPOGRAPHY --- */
-h1, h2, h3 {
-  font-family: var(--font-head);
-  font-weight: 600;
-  line-height: 1.1;
-}
-
-/* --- LINKS --- */
 a {
   color: inherit;
   text-decoration: none;
@@ -86,72 +54,40 @@ a {
   padding: 0 24px;
 }
 
-/* --- COMPONENT UTILITIES --- */
+/* --- TYPOGRAPHY --- */
+h1, h2, h3 {
+  font-family: var(--font-head);
+  font-weight: 600;
+  line-height: 1.1;
+}
+
 .highlight {
   color: var(--accent);
 }
 
-/* --- INTERACTIVE STATES --- */
-.app-card {
-  background-color: var(--surface);
-  border-radius: var(--radius);
-  padding: 32px;
-  transition: background 0.2s ease, transform 0.2s ease;
+/* --- HEADER --- */
+header {
+  padding: 40px 0;
   display: flex;
-  flex-direction: column;
-  border: 1px solid rgba(255,255,255,0.05);
+  justify-content: space-between;
+  align-items: center;
 }
 
-.app-card:hover {
-  background-color: var(--surface-hover);
-  transform: translateY(-2px);
-  border-color: rgba(255,255,255,0.1);
+.logo {
+  font-family: var(--font-head);
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
 }
 
-.app-link:hover {
-  color: var(--accent);
+.nav-links a {
+  margin-left: 24px;
+  font-size: 0.9rem;
+  color: var(--text-muted);
 }
+.nav-links a:hover { color: var(--text); }
 
-.project-item:hover .project-name {
-  color: var(--accent);
-}
-
-/* --- SMOOTH SCROLLING --- */
-html {
-  scroll-behavior: smooth;
-}
-
-/* --- CUSTOM SCROLLBAR --- */
-::-webkit-scrollbar {
-  width: 6px;
-}
-
-::-webkit-scrollbar-track {
-  background: var(--surface);
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--text-muted);
-  border-radius: 3px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: var(--accent);
-}
-
-/* --- SELECTION STYLES --- */
-::selection {
-  background-color: var(--accent);
-  color: var(--text);
-}
-
-/* --- FOCUS STYLES --- */
-:focus-visible {
-  outline: 2px solid var(--ring);
-  outline-offset: 2px;
-}
-
-/* --- HERO SECTION --- */
+/* --- HERO --- */
 .hero {
   padding: 80px 0 100px;
   max-width: 800px;
@@ -184,7 +120,7 @@ html {
   flex-grow: 1;
 }
 
-/* --- APP GRID --- */
+/* --- APP GRID (The Money Makers) --- */
 .app-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -192,7 +128,75 @@ html {
   margin-bottom: 80px;
 }
 
-/* --- PROJECT LIST --- */
+.app-card {
+  background-color: var(--surface);
+  border-radius: var(--radius);
+  padding: 32px;
+  transition: background 0.2s ease, transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(255,255,255,0.05); /* Very subtle border */
+}
+
+.app-card:hover {
+  background-color: var(--surface-hover);
+  transform: translateY(-2px);
+  border-color: rgba(255,255,255,0.1);
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 16px;
+}
+
+.app-icon {
+  width: 48px;
+  height: 48px;
+  background-color: rgba(217, 29, 65, 0.1); /* Low opacity red */
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent);
+  font-family: var(--font-head);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.app-price {
+  font-size: 0.9rem;
+  background: #2a2a2a;
+  padding: 4px 10px;
+  border-radius: 4px;
+  color: var(--text-muted);
+}
+
+.app-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 8px;
+}
+
+.app-card p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 24px;
+  flex-grow: 1;
+}
+
+.app-link {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.app-link:hover { color: var(--accent); }
+
+/* --- PROJECT LIST (Quick List) --- */
 .project-list {
   margin-bottom: 80px;
 }
@@ -203,6 +207,10 @@ html {
   align-items: center;
   padding: 20px 0;
   border-bottom: 1px solid #222;
+}
+
+.project-item:hover .project-name {
+  color: var(--accent);
 }
 
 .project-name {
@@ -217,17 +225,54 @@ html {
   text-align: right;
 }
 
-/* --- RESPONSIVE HELPERS --- */
+/* --- LEGAL HUB (Clean & Searchable vibe) --- */
+.legal-section {
+  background-color: var(--surface);
+  border-radius: var(--radius);
+  padding: 40px;
+  margin-bottom: 80px;
+}
+
+.legal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+  margin-top: 32px;
+}
+
+.legal-col h4 {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+
+.legal-col ul { list-style: none; }
+
+.legal-col li { margin-bottom: 10px; }
+
+.legal-col a {
+  color: var(--text);
+  font-size: 0.95rem;
+  opacity: 0.8;
+}
+
+.legal-col a:hover { opacity: 1; color: var(--accent); }
+
+/* --- FOOTER --- */
+footer {
+  padding: 40px 0;
+  border-top: 1px solid #222;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Mobile tweaks */
 @media (max-width: 600px) {
-  .hero h1 {
-    font-size: 2.5rem;
-  }
-  .project-item {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
-  }
-  .project-desc {
-    text-align: left;
-  }
+  .hero h1 { font-size: 2.5rem; }
+  .project-item { flex-direction: column; align-items: flex-start; gap: 8px; }
+  .project-desc { text-align: left; }
 }

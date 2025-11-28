@@ -1,20 +1,11 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Rafał Piekara - Personal Portfolio",
-  description: "Welcome to my personal landing page. Explore my projects, learn more about me, and find useful resources.",
+  title: "Piekara.me | Developer & Creator",
+  description: "I build apps, teach Rails, and occasionally break production.",
 };
 
 export default function RootLayout({
@@ -24,10 +15,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <body>
+        <div className="wrapper">
+          <Navigation />
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   );
