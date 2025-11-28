@@ -32,10 +32,10 @@ export default function BottomTabBar() {
 
   const getIsActive = (item: typeof navItems[0]) => {
     if (item.isAnchor) {
-      // For anchor links, check if we're on the homepage and the hash matches
+      // For anchor links, check if we're on the homepage and the hash matches exactly
       return pathname === "/" && hash === "#social";
     } else if (item.href === "/") {
-      // For home page, active when on homepage and NOT on #social section
+      // For home page, active when on homepage AND there's no #social hash
       return pathname === "/" && hash !== "#social";
     } else {
       // For other pages, check if pathname starts with the href
