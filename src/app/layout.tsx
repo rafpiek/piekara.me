@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Piekara.me | Developer & Creator",
-  description: "I build apps, teach Rails, and occasionally break production.",
+  description: "I build apps, teach Programming, and occasionally break production.",
 };
 
 export default function RootLayout({
