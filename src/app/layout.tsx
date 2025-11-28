@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Rafał Piekarz - Personal Portfolio",
+  title: "Rafał Piekara - Personal Portfolio",
   description: "Welcome to my personal landing page. Explore my projects, learn more about me, and find useful resources.",
 };
 

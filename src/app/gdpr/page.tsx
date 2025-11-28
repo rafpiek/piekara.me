@@ -39,7 +39,7 @@ export default function GDPR() {
               <h2 className="text-2xl font-bold mb-4 text-slate-900 dark:text-white">Data Controller</h2>
               <div className="bg-slate-50 dark:bg-slate-900 p-6 rounded-xl">
                 <p className="text-slate-600 dark:text-slate-400">
-                  <strong>Name:</strong> Rafał Piekarz<br/>
+                  <strong>Name:</strong> Rafał Piekara<br/>
                   <strong>Website:</strong> https://piekara.me<br/>
                   <strong>Purpose:</strong> Personal portfolio and information sharing<br/>
                   <strong>Contact:</strong> For privacy inquiries, please use the contact information provided in the Info Hub section
@@ -164,7 +164,7 @@ export default function GDPR() {
             <section>
               <h2 className="text-2xl font-bold mb-4 text-slate-900 dark:text-white">Changes to This Policy</h2>
               <p className="text-slate-600 dark:text-slate-400">
-                I may update this Privacy Policy from time to time to reflect changes in my practices or applicable law. The updated policy will be posted on this page with a revised "Last updated" date.
+                I may update this Privacy Policy from time to time to reflect changes in my practices or applicable law. The updated policy will be posted on this page with a revised &quot;Last updated&quot; date.
               </p>
             </section>
 

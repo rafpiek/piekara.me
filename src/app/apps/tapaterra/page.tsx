@@ -165,7 +165,7 @@ export default function Tapaterra() {
             <div className="bg-gradient-to-r from-blue-500 to-purple-600 rounded-3xl p-12 text-white mb-12">
               <h2 className="text-3xl font-bold mb-4 text-center">Perfect for Young Explorers</h2>
               <p className="text-xl mb-8 text-center max-w-3xl mx-auto">
-                Whether you're a parent looking for educational content for your kids, a teacher planning geography lessons, or someone who wants to expand their world knowledge, Tapaterra makes learning geography fun and engaging.
+                Whether you&apos;re a parent looking for educational content for your kids, a teacher planning geography lessons, or someone who wants to expand their world knowledge, Tapaterra makes learning geography fun and engaging.
               </p>
               <div className="grid md:grid-cols-3 gap-8 text-center">
                 <div>

@@ -1,16 +1,37 @@
 @import "tailwindcss";
 
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Grotesk:wght@400;600&display=swap');
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-  --muted: #f1f5f9;
-  --muted-foreground: #64748b;
-  --accent: #f1f5f9;
-  --accent-foreground: #0f172a;
-  --card: #ffffff;
-  --card-foreground: #0f172a;
-  --border: #e2e8f0;
-  --ring: #0ea5e9;
+  /* --- DESIGN SYSTEM COLORS --- */
+  --bg: #0a0a0a;         /* Deepest Black - Main background */
+  --surface: #171717;    /* Subtle separation for cards */
+  --surface-hover: #222222;
+
+  --text: #ededed;       /* Primary text */
+  --text-muted: #888888; /* Secondary/subtle text */
+
+  /* The Ruby Personality */
+  --accent: #D91D41;     /* Ruby Red - Strong but not neon */
+
+  --font-head: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  --radius: 8px;         /* Subtle rounding (Professional, not bubbly) */
+  --container: 1100px;
+
+  /* Tailwind compatibility */
+  --background: var(--bg);
+  --foreground: var(--text);
+  --muted: var(--surface);
+  --muted-foreground: var(--text-muted);
+  --accent: var(--accent);
+  --accent-foreground: var(--text);
+  --card: var(--surface);
+  --card-foreground: var(--text);
+  --border: rgba(255,255,255,0.05);
+  --ring: var(--accent);
 }
 
 @theme inline {
@@ -24,77 +45,189 @@
   --color-card-foreground: var(--card-foreground);
   --color-border: var(--border);
   --color-ring: var(--ring);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-    --muted: #1e293b;
-    --muted-foreground: #94a3b8;
-    --accent: #1e293b;
-    --accent-foreground: #f8fafc;
-    --card: #0a0a0a;
-    --card-foreground: #f8fafc;
-    --border: #1e293b;
-    --ring: #0ea5e9;
-  }
+  --font-sans: var(--font-body);
+  --font-mono: var(--font-body);
 }
 
 * {
   border-color: var(--border);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-feature-settings: "rlig" 1, "calt" 1;
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
 }
 
-/* Smooth scrolling */
+/* --- BASE TYPOGRAPHY --- */
+h1, h2, h3 {
+  font-family: var(--font-head);
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+/* --- LINKS --- */
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+/* --- LAYOUT --- */
+.wrapper {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* --- COMPONENT UTILITIES --- */
+.highlight {
+  color: var(--accent);
+}
+
+/* --- INTERACTIVE STATES --- */
+.app-card {
+  background-color: var(--surface);
+  border-radius: var(--radius);
+  padding: 32px;
+  transition: background 0.2s ease, transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+.app-card:hover {
+  background-color: var(--surface-hover);
+  transform: translateY(-2px);
+  border-color: rgba(255,255,255,0.1);
+}
+
+.app-link:hover {
+  color: var(--accent);
+}
+
+.project-item:hover .project-name {
+  color: var(--accent);
+}
+
+/* --- SMOOTH SCROLLING --- */
 html {
   scroll-behavior: smooth;
 }
 
-/* Custom scrollbar */
+/* --- CUSTOM SCROLLBAR --- */
 ::-webkit-scrollbar {
   width: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--muted);
+  background: var(--surface);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--muted-foreground);
+  background: var(--text-muted);
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--accent-foreground);
+  background: var(--accent);
 }
 
-/* Selection styles */
+/* --- SELECTION STYLES --- */
 ::selection {
   background-color: var(--accent);
-  color: var(--accent-foreground);
+  color: var(--text);
 }
 
-/* Focus styles */
+/* --- FOCUS STYLES --- */
 :focus-visible {
   outline: 2px solid var(--ring);
   outline-offset: 2px;
 }
 
-/* Gradient text utility */
-.gradient-text {
-  @apply bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent;
+/* --- HERO SECTION --- */
+.hero {
+  padding: 80px 0 100px;
+  max-width: 800px;
 }
 
-/* Glassmorphism utility */
-.glass {
-  @apply bg-white/80 dark:bg-black/80 backdrop-blur-md;
+.hero h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  margin-bottom: 24px;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  color: var(--text-muted);
+  max-width: 600px;
+}
+
+/* --- SECTIONS --- */
+.section-title {
+  font-size: 1.5rem;
+  margin-bottom: 32px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.section-title::after {
+  content: '';
+  height: 1px;
+  background: #333;
+  flex-grow: 1;
+}
+
+/* --- APP GRID --- */
+.app-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+  margin-bottom: 80px;
+}
+
+/* --- PROJECT LIST --- */
+.project-list {
+  margin-bottom: 80px;
+}
+
+.project-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #222;
+}
+
+.project-name {
+  font-family: var(--font-head);
+  font-size: 1.1rem;
+  transition: color 0.2s;
+}
+
+.project-desc {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  text-align: right;
+}
+
+/* --- RESPONSIVE HELPERS --- */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  .project-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .project-desc {
+    text-align: left;
+  }
 }

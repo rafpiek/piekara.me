@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piekara.me | Developer & Creator</title>
+    
+    <!-- FONTS: Space Grotesk (Tech/Quirky headings) + Inter (Clean body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* --- VARIABLES --- */
+        :root {
+            --bg: #0a0a0a;         /* Deepest Black */
+            --surface: #171717;    /* Subtle separation for cards */
+            --surface-hover: #222222;
+            
+            --text: #ededed;
+            --text-muted: #888888;
+            
+            /* The Ruby Personality */
+            --accent: #D91D41;     /* Ruby Red - Strong but not neon */
+            
+            --font-head: 'Space Grotesk', sans-serif;
+            --font-body: 'Inter', sans-serif;
+            
+            --radius: 8px;         /* Subtle rounding (Professional, not bubbly) */
+            --container: 1100px;
+        }
+
+        /* --- BASE --- */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: var(--font-body);
+            font-size: 16px;
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        /* --- LAYOUT --- */
+        .wrapper {
+            max-width: var(--container);
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* --- TYPOGRAPHY --- */
+        h1, h2, h3 {
+            font-family: var(--font-head);
+            font-weight: 600;
+            line-height: 1.1;
+        }
+
+        .highlight {
+            color: var(--accent);
+        }
+
+        /* --- HEADER --- */
+        header {
+            padding: 40px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: var(--font-head);
+            font-size: 1.25rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+        }
+
+        .nav-links a {
+            margin-left: 24px;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+        .nav-links a:hover { color: var(--text); }
+
+        /* --- HERO --- */
+        .hero {
+            padding: 80px 0 100px;
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            margin-bottom: 24px;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            max-width: 600px;
+        }
+
+        /* --- SECTIONS --- */
+        .section-title {
+            font-size: 1.5rem;
+            margin-bottom: 32px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .section-title::after {
+            content: '';
+            height: 1px;
+            background: #333;
+            flex-grow: 1;
+        }
+
+        /* --- APP GRID (The Money Makers) --- */
+        .app-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 24px;
+            margin-bottom: 80px;
+        }
+
+        .app-card {
+            background-color: var(--surface);
+            border-radius: var(--radius);
+            padding: 32px;
+            transition: background 0.2s ease, transform 0.2s ease;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid rgba(255,255,255,0.05); /* Very subtle border */
+        }
+
+        .app-card:hover {
+            background-color: var(--surface-hover);
+            transform: translateY(-2px);
+            border-color: rgba(255,255,255,0.1);
+        }
+
+        .app-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 16px;
+        }
+
+        .app-icon {
+            width: 48px;
+            height: 48px;
+            background-color: rgba(217, 29, 65, 0.1); /* Low opacity red */
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent);
+            font-family: var(--font-head);
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .app-price {
+            font-size: 0.9rem;
+            background: #2a2a2a;
+            padding: 4px 10px;
+            border-radius: 4px;
+            color: var(--text-muted);
+        }
+
+        .app-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 8px;
+        }
+
+        .app-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 24px;
+            flex-grow: 1;
+        }
+
+        .app-link {
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--text);
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        
+        .app-link:hover { color: var(--accent); }
+
+        /* --- PROJECT LIST (Quick List) --- */
+        .project-list {
+            margin-bottom: 80px;
+        }
+
+        .project-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            border-bottom: 1px solid #222;
+        }
+
+        .project-item:hover .project-name {
+            color: var(--accent);
+        }
+
+        .project-name {
+            font-family: var(--font-head);
+            font-size: 1.1rem;
+            transition: color 0.2s;
+        }
+
+        .project-desc {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            text-align: right;
+        }
+
+        /* --- LEGAL HUB (Clean & Searchable vibe) --- */
+        .legal-section {
+            background-color: var(--surface);
+            border-radius: var(--radius);
+            padding: 40px;
+            margin-bottom: 80px;
+        }
+
+        .legal-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-top: 32px;
+        }
+
+        .legal-col h4 {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-muted);
+            margin-bottom: 16px;
+        }
+
+        .legal-col ul { list-style: none; }
+        
+        .legal-col li { margin-bottom: 10px; }
+        
+        .legal-col a {
+            color: var(--text);
+            font-size: 0.95rem;
+            opacity: 0.8;
+        }
+        
+        .legal-col a:hover { opacity: 1; color: var(--accent); }
+
+        /* --- FOOTER --- */
+        footer {
+            padding: 40px 0;
+            border-top: 1px solid #222;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* Mobile tweaks */
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 2.5rem; }
+            .project-item { flex-direction: column; align-items: flex-start; gap: 8px; }
+            .project-desc { text-align: left; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <!-- HEADER -->
+        <header>
+            <div class="logo">piekara<span class="highlight">.me</span></div>
+            <nav class="nav-links">
+                <a href="#apps">Apps</a>
+                <a href="#projects">Projects</a>
+                <a href="#legal">Docs</a>
+            </nav>
+        </header>
+
+        <!-- HERO -->
+        <section class="hero">
+            <h1>
+                I build apps, teach Rails, and occasionally <span class="highlight">break production.</span>
+            </h1>
+            <p>
+                Hi, I'm [Your Name]. Welcome to my digital HQ. 
+                This is where I ship my commercial products, host my creative projects, 
+                and keep the lawyers happy.
+            </p>
+        </section>
+
+        <!-- APPS (Commercial) -->
+        <h2 class="section-title">Commercial Apps</h2>
+        <div class="app-grid" id="apps">
+            
+            <!-- App 1 -->
+            <div class="app-card">
+                <div class="app-header">
+                    <div class="app-icon">FT</div> <!-- Placeholder for App Icon -->
+                    <span class="app-price">$4.99</span>
+                </div>
+                <h3>Focus Timer Pro</h3>
+                <p>The only Pomodoro timer that doesn't make you feel guilty for taking a coffee break.</p>
+                <a href="#" class="app-link">View on App Store →</a>
+            </div>
+
+            <!-- App 2 -->
+            <div class="app-card">
+                <div class="app-header">
+                    <div class="app-icon">DV</div>
+                    <span class="app-price">Free</span>
+                </div>
+                <h3>DataVault</h3>
+                <p>Offline-first notes for people who trust no one (except me, apparently).</p>
+                <a href="#" class="app-link">Download Beta →</a>
+            </div>
+
+            <!-- App 3 -->
+            <div class="app-card">
+                <div class="app-header">
+                    <div class="app-icon">RB</div>
+                    <span class="app-price">Course</span>
+                </div>
+                <h3>Rails Boilerplate</h3>
+                <p>Stop configuring Webpack and start building your startup. Includes 5 hours of video.</p>
+                <a href="#" class="app-link">Get Access →</a>
+            </div>
+
+        </div>
+
+        <!-- PROJECTS (Experiments/Content) -->
+        <h2 class="section-title" id="projects">Side Projects</h2>
+        <div class="project-list">
+            <a href="#" class="project-item">
+                <span class="project-name">The "How to Rails" YouTube Channel</span>
+                <span class="project-desc">Educational Content</span>
+            </a>
+            <a href="#" class="project-item">
+                <span class="project-name">Open Source UI Kit</span>
+                <span class="project-desc">GitHub / MIT License</span>
+            </a>
+            <a href="#" class="project-item">
+                <span class="project-name">My Old Blog (Archive)</span>
+                <span class="project-desc">2018 - 2022</span>
+            </a>
+        </div>
+
+        <!-- LEGAL HUB -->
+        <div class="legal-section" id="legal">
+            <h2 style="font-size: 1.25rem; margin-bottom: 10px;">The Document Hub</h2>
+            <p style="color: var(--text-muted); margin-bottom: 0;">
+                Because `piekara.me` is also a business entity, here are the required documents.
+            </p>
+
+            <div class="legal-grid">
+                <!-- General -->
+                <div class="legal-col">
+                    <h4>General (Piekara.me)</h4>
+                    <ul>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookie Settings</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Product Specific -->
+                <div class="legal-col">
+                    <h4>Focus Timer App</h4>
+                    <ul>
+                        <li><a href="#">EULA</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Product Specific -->
+                <div class="legal-col">
+                    <h4>DataVault App</h4>
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">GDPR Compliance</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer>
+            <div>© 2024 Piekara.me</div>
+            <div>
+                <a href="#" style="margin-left: 20px">Twitter/X</a>
+                <a href="#" style="margin-left: 20px">GitHub</a>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+</html>

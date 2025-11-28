@@ -39,13 +39,13 @@ export default function InfoHub() {
                 </h2>
                 <div className="prose prose-slate dark:prose-invert max-w-none">
                   <p className="text-slate-600 dark:text-slate-400 leading-relaxed mb-4">
-                    Hello! I'm Rafał Piekarz, a passionate software developer with a love for creating elegant, efficient solutions to complex problems. My journey in technology began with a curiosity about how things work and evolved into a career dedicated to building meaningful digital experiences.
+                    Hello! I&apos;m Rafał Piekara, a passionate software developer with a love for creating elegant, efficient solutions to complex problems. My journey in technology began with a curiosity about how things work and evolved into a career dedicated to building meaningful digital experiences.
                   </p>
                   <p className="text-slate-600 dark:text-slate-400 leading-relaxed mb-4">
                     I specialize in modern web technologies and enjoy working across the full stack. From crafting pixel-perfect user interfaces to designing scalable backend architectures, I find joy in every aspect of the development process.
                   </p>
                   <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
-                    When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or sharing knowledge with the developer community through writing and mentoring.
+                    When I&apos;m not coding, you can find me exploring new technologies, contributing to open-source projects, or sharing knowledge with the developer community through writing and mentoring.
                   </p>
                 </div>
               </div>
@@ -230,9 +230,9 @@ export default function InfoHub() {
           </div>
 
           <div className="bg-gradient-to-r from-slate-900 to-slate-800 rounded-3xl p-12 text-center">
-            <h2 className="text-3xl font-bold text-white mb-4">Let's Work Together</h2>
+            <h2 className="text-3xl font-bold text-white mb-4">Let&apos;s Work Together</h2>
             <p className="text-slate-300 mb-8 max-w-2xl mx-auto">
-              I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions. Feel free to reach out!
+              I&apos;m always open to discussing new projects, creative ideas, or opportunities to be part of your visions. Feel free to reach out!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
