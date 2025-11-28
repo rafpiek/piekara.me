@@ -20,12 +20,6 @@ export default function Footer() {
           <Link href="https://github.com/grubykodzi" target="_blank" className="hover:text-[var(--text)] transition-colors">
             GitHub
           </Link>
-          <Link href="https://x.com/raf_piek" target="_blank" className="hover:text-[var(--text)] transition-colors">
-            X
-          </Link>
-          <Link href="https://www.linkedin.com/in/rafalpiekara/" target="_blank" className="hover:text-[var(--text)] transition-colors">
-            LinkedIn
-          </Link>
         </div>
       </div>
     </footer>
