@@ -47,16 +47,16 @@ export default function Home() {
     <>
       <Hero />
 
+      <div className="text-right mb-4">
+        <Link href="/apps" className="text-sm text-[var(--accent)] hover:underline">
+          See more →
+        </Link>
+      </div>
       <SectionTitle>Apps</SectionTitle>
       <div className="app-grid" id="apps">
         {apps.map((app) => (
           <AppCard key={app.title} {...app} />
         ))}
-      </div>
-      <div className="text-right mt-4">
-        <Link href="/apps" className="text-sm text-[var(--accent)] hover:underline">
-          See more →
-        </Link>
       </div>
 
       <SectionTitle id="projects">Side Projects</SectionTitle>
