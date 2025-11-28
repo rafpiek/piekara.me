@@ -37,9 +37,21 @@ const apps = [
 ];
 
 const projects = [
-  { name: "Development Approach & Skills", description: "Methodology", href: "/projects" },
-  { name: "Open Source UI Kit", description: "GitHub / MIT License", href: "#" },
-  { name: "My Old Blog (Archive)", description: "2018 - 2022", href: "#" },
+  {
+    name: 'Ultimate Rails SaaS template',
+    description: 'A Rails & React SaaS template powered by Inertia.js for modern, scalable apps.',
+    href: '#',
+  },
+  {
+    name: 'Course: Ruby on Rails architecture basics',
+    description: 'A deep dive into the fundamentals of building robust and maintainable Rails applications.',
+    href: '#',
+  },
+  {
+    name: 'Book: The Mystery Beast',
+    description: "A gripping horror novel where a small town is terrorized by an unseen creature.",
+    href: '#',
+  },
 ];
 
 export default function Home() {
