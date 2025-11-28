@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {
   Hero,
   SectionTitle,
@@ -47,13 +48,15 @@ export default function Home() {
       <Hero />
 
       <SectionTitle>Apps</SectionTitle>
-      <Link href="/apps" className="text-sm text-[var(--accent)] hover:underline mb-4 inline-block">
-        See more →
-      </Link>
       <div className="app-grid" id="apps">
         {apps.map((app) => (
           <AppCard key={app.title} {...app} />
         ))}
+      </div>
+      <div className="text-right mt-4">
+        <Link href="/apps" className="text-sm text-[var(--accent)] hover:underline">
+          See more →
+        </Link>
       </div>
 
       <SectionTitle id="projects">Side Projects</SectionTitle>
