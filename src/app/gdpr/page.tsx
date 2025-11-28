@@ -1,182 +1,66 @@
+import fs from 'fs';
+import path from 'path';
 import Link from "next/link";
+import MarkdownRenderer from "@/components/MarkdownRenderer";
 
 export default function GDPR() {
-  const currentDate = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+  const filePath = path.join(process.cwd(), 'src/content/privacy-policy.md');
+  const content = fs.readFileSync(filePath, 'utf8');
+
+  const stats = fs.statSync(filePath);
+  const lastUpdated = stats.mtime.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
 
   return (
-    <>
-      <div className="mb-8">
-        <Link
-          href="/"
-          className="inline-flex items-center text-[var(--text-muted)] hover:text-[var(--text)] transition-colors mb-6"
-        >
-          <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-          </svg>
-          Back to Home
-        </Link>
-        <h1 className="mb-4">
-          Privacy & GDPR Policy
-        </h1>
-        <p className="text-[var(--text-muted)]">
-          Last updated: {currentDate}
-        </p>
-      </div>
+    <div className="py-12 lg:py-20">
+      <div className="lg:grid lg:grid-cols-12 lg:gap-12">
+        {/* LEFT COLUMN: Sticky Header Information */}
+        <aside className="lg:col-span-4 mb-12 lg:mb-0">
+          <div className="lg:sticky lg:top-12">
+            <Link
+              href="/"
+              className="group inline-flex items-center text-sm font-medium text-[var(--text-muted)] hover:text-[var(--accent)] transition-colors mb-8"
+            >
+              <svg
+                className="w-4 h-4 mr-2 transform group-hover:-translate-x-1 transition-transform"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+              </svg>
+              Back to Home
+            </Link>
 
-      <div className="app-card">
-        <section className="mb-8">
-          <h2 className="mb-4">Introduction</h2>
-          <p className="text-[var(--text-muted)] leading-relaxed">
-            Welcome to my personal website. This Privacy Policy explains how I collect, use, and protect your information when you visit piekara.me.
-            I am committed to protecting your personal data and ensuring compliance with the General Data Protection Regulation (GDPR) and other applicable privacy laws.
-          </p>
-        </section>
-
-        <section className="mb-8">
-          <h2 className="mb-4">Data Controller</h2>
-          <div className="p-6 rounded-xl border border-[var(--border)] bg-[var(--bg)]">
-            <p className="text-[var(--text-muted)]">
-              <strong>Name:</strong> Rafał Piekara<br/>
-              <strong>Website:</strong> https://piekara.me<br/>
-              <strong>Purpose:</strong> Personal portfolio and information sharing<br/>
-              <strong>Contact:</strong> For privacy inquiries, please use the contact information provided in the Info Hub section
-            </p>
-          </div>
-        </section>
-
-        <section className="mb-8">
-          <h2 className="mb-4">Information I Collect</h2>
-          <div className="space-y-4">
-            <div>
-              <h3 className="text-lg font-semibold mb-2">Automatically Collected Information</h3>
-              <ul className="list-disc list-inside text-[var(--text-muted)] space-y-2">
-                <li>IP address (anonymized where possible)</li>
-                <li>Browser type and version</li>
-                <li>Operating system</li>
-                <li>Pages visited and time spent on pages</li>
-                <li>Referring website</li>
-                <li>General location information (country/region level)</li>
-              </ul>
+            <div className="mb-12">
+              <h1 className="text-4xl md:text-5xl font-bold tracking-tighter leading-[0.9] mb-6">
+                Privacy &<br />
+                <span className="text-[var(--text-muted)]">GDPR Policy</span>
+              </h1>
+              <div className="h-1 w-20 bg-[var(--accent)] rounded-full"></div>
             </div>
 
-            <div>
-              <h3 className="text-lg font-semibold mb-2">Information You Provide Voluntarily</h3>
-              <ul className="list-disc list-inside text-[var(--text-muted)] space-y-2">
-                <li>Contact form submissions (name, email, message)</li>
-                <li>Comments or feedback</li>
-                <li>Newsletter subscription (if applicable)</li>
-              </ul>
+            <div className="mb-8">
+              <p className="text-[var(--text-muted)] uppercase tracking-wider font-semibold text-xs mb-2">Last Updated</p>
+              <p className="font-mono text-[var(--text)]">{lastUpdated}</p>
+            </div>
+
+            <div className="pt-8 border-t border-[rgba(255,255,255,0.05)]">
+              <p className="text-[var(--text-muted)] text-sm leading-relaxed">
+                This document explains how I collect, use, and protect your data. I value transparency and your right to privacy.
+              </p>
             </div>
           </div>
-        </section>
+        </aside>
 
-        <section className="mb-8">
-          <h2 className="mb-4">How I Use Your Information</h2>
-          <ul className="list-disc list-inside text-[var(--text-muted)] space-y-2">
-            <li>To provide and maintain my website</li>
-            <li>To respond to your inquiries and messages</li>
-            <li>To improve user experience and website performance</li>
-            <li>To analyze website traffic and usage patterns</li>
-            <li>To ensure website security and prevent fraud</li>
-            <li>To comply with legal obligations</li>
-          </ul>
-        </section>
-
-        <section className="mb-8">
-          <h2 className="mb-4">Legal Basis for Processing</h2>
-          <p className="text-[var(--text-muted)] mb-4">
-            I process your personal data based on the following legal grounds under GDPR:
-          </p>
-          <ul className="list-disc list-inside text-[var(--text-muted)] space-y-2">
-            <li><strong>Legitimate Interest:</strong> For website analytics and security monitoring</li>
-            <li><strong>Consent:</strong> When you voluntarily provide information through contact forms</li>
-            <li><strong>Legal Obligation:</strong> When required by law to retain certain information</li>
-          </ul>
-        </section>
-
-        <section className="mb-8">
-          <h2 className="mb-4">Third-Party Services</h2>
-          <p className="text-[var(--text-muted)] mb-4">
-            This website may use the following third-party services:
-          </p>
-          <ul className="list-disc list-inside text-[var(--text-muted)] space-y-2">
-            <li><strong>Hosting Providers:</strong> Vercel/Netlify for website hosting</li>
-            <li><strong>Analytics:</strong> Privacy-focused analytics tools (if any)</li>
-            <li><strong>CDN:</strong> Content Delivery Networks for performance optimization</li>
-          </ul>
-        </section>
-
-        <section className="mb-8">
-          <h2 className="mb-4">Your Rights Under GDPR</h2>
-          <p className="text-[var(--text-muted)] mb-4">
-            Under GDPR, you have the following rights regarding your personal data:
-          </p>
-          <ul className="list-disc list-inside text-[var(--text-muted)] space-y-2">
-            <li><strong>Right to Access:</strong> Request copies of your personal data</li>
-            <li><strong>Right to Rectification:</strong> Request correction of inaccurate data</li>
-            <li><strong>Right to Erasure:</strong> Request deletion of your personal data</li>
-            <li><strong>Right to Restrict Processing:</strong> Limit how your data is used</li>
-            <li><strong>Right to Data Portability:</strong> Request transfer of your data</li>
-            <li><strong>Right to Object:</strong> Object to processing of your data</li>
-            <li><strong>Right to Withdraw Consent:</strong> Revoke consent at any time</li>
-          </ul>
-        </section>
-
-        <section className="mb-8">
-          <h2 className="mb-4">Data Security</h2>
-          <p className="text-[var(--text-muted)]">
-            I implement appropriate technical and organizational measures to protect your personal data against unauthorized access, alteration, disclosure, or destruction. These include SSL encryption, secure hosting environments, and regular security updates.
-          </p>
-        </section>
-
-        <section className="mb-8">
-          <h2 className="mb-4">Data Retention</h2>
-          <p className="text-[var(--text-muted)]">
-            I retain your personal data only as long as necessary for the purposes outlined in this policy, unless a longer retention period is required by law. Contact form submissions are typically retained for 12 months for communication purposes.
-          </p>
-        </section>
-
-        <section className="mb-8">
-          <h2 className="mb-4">Cookies</h2>
-          <p className="text-[var(--text-muted)] mb-4">
-            This website may use cookies to enhance your browsing experience:
-          </p>
-          <ul className="list-disc list-inside text-[var(--text-muted)] space-y-2">
-            <li><strong>Essential Cookies:</strong> Required for website functionality</li>
-            <li><strong>Analytics Cookies:</strong> To understand website usage (anonymized)</li>
-            <li><strong>Preference Cookies:</strong> To remember your settings</li>
-          </ul>
-          <p className="text-[var(--text-muted)] mt-4">
-            You can control cookies through your browser settings. Disabling cookies may affect website functionality.
-          </p>
-        </section>
-
-        <section className="mb-8">
-          <h2 className="mb-4">International Data Transfers</h2>
-          <p className="text-[var(--text-muted)]">
-            If your data is transferred outside the EU/EEA, I ensure adequate protection through appropriate safeguards such as Standard Contractual Clauses (SCCs) or other GDPR-compliant mechanisms.
-          </p>
-        </section>
-
-        <section className="mb-8">
-          <h2 className="mb-4">Changes to This Policy</h2>
-          <p className="text-[var(--text-muted)]">
-            I may update this Privacy Policy from time to time to reflect changes in my practices or applicable law. The updated policy will be posted on this page with a revised &quot;Last updated&quot; date.
-          </p>
-        </section>
-
-        <section>
-          <h2 className="mb-4">Contact Information</h2>
-          <p className="text-[var(--text-muted)] mb-4">
-            If you have any questions about this Privacy Policy or wish to exercise your GDPR rights, please contact me using the information provided in the Info Hub section.
-          </p>
-          <div className="p-6 rounded-xl border border-blue-900 bg-blue-900/20">
-            <p className="text-blue-200">
-              <strong>Data Protection Concerns:</strong> If you believe your data protection rights have been violated, you have the right to lodge a complaint with your local data protection authority.
-            </p>
+        {/* RIGHT COLUMN: Content */}
+        <main className="lg:col-span-8">
+          <div className="bg-[rgba(255,255,255,0.02)] border border-[rgba(255,255,255,0.05)] rounded-2xl shadow-2xl backdrop-blur-sm">
+            <div className="p-8 md:p-12 lg:p-16">
+              <MarkdownRenderer content={content} />
+            </div>
           </div>
-        </section>
+        </main>
       </div>
-    </>
+    </div>
   );
 }

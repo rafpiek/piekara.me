@@ -11,6 +11,22 @@ export default function Apps() {
       features: ["Flag Recognition", "Country Facts", "Interactive Quizzes", "Kid-Friendly"]
     },
     {
+      icon: "🦉",
+      title: "Wordee",
+      description: "An English dictionary on your terms. Learn specific words by taking pictures of textbooks and starting effective learning immediately with AI.",
+      price: "Early Access",
+      link: "/apps/wordee",
+      features: ["Camera Input", "AI Powered", "Personalized", "Effective Learning"]
+    },
+    {
+      icon: "🖋️",
+      title: "Zeyn",
+      description: "The focus-first editor for novel writers. Stop starting over and finally finish your novel with distraction-free tools and smart organization.",
+      price: "Beta Access",
+      link: "/apps/zeyn",
+      features: ["Focus Mode", "Visual Structure", "Smart Tracking", "Desktop First"]
+    },
+    {
       icon: "🚀",
       title: "Upcoming Project",
       description: "Something exciting is in development. Stay tuned for my next commercial product release with innovative features and modern design.",

@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Grotesk:wght@400;600&display=swap');
 
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 @theme inline {
   --color-background: var(--bg);
@@ -15,16 +16,16 @@
   --bg: #0a0a0a;         /* Deepest Black */
   --surface: #171717;    /* Subtle separation for cards */
   --surface-hover: #222222;
-  
+
   --text: #ededed;
   --text-muted: #888888;
-  
+
   /* The Ruby Personality */
   --accent: #D91D41;     /* Ruby Red - Strong but not neon */
-  
+
   --font-head: 'Space Grotesk', sans-serif;
   --font-body: 'Inter', sans-serif;
-  
+
   --radius: 8px;         /* Subtle rounding (Professional, not bubbly) */
   --container: 1100px;
 }
@@ -262,6 +263,7 @@ header {
 
 /* --- FOOTER --- */
 footer {
+  margin-top: 64px;
   padding: 40px 0;
   border-top: 1px solid #222;
   color: var(--text-muted);
@@ -275,4 +277,143 @@ footer {
   .hero h1 { font-size: 2.5rem; }
   .project-item { flex-direction: column; align-items: flex-start; gap: 8px; }
   .project-desc { text-align: left; }
+}
+
+/* --- MARKDOWN CONTENT --- */
+.markdown-content {
+  color: var(--text);
+  font-size: 1rem;
+  line-height: 1.7;
+  padding: 16px;
+  margin: 0;
+}
+
+.markdown-content p {
+  margin-bottom: 1.5em;
+  margin-top: 0;
+  color: var(--text-muted);
+  line-height: 1.75;
+}
+
+.markdown-content p:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-content h2 + p {
+  margin-top: 1.5em;
+}
+
+.markdown-content h3 + p {
+  margin-top: 1em;
+}
+
+.markdown-content h2 {
+  font-family: var(--font-head);
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-top: 3em;
+  margin-bottom: 0;
+  padding-bottom: 0.75em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  line-height: 1.2;
+}
+
+.markdown-content h2:first-child {
+  margin-top: 0;
+}
+
+.markdown-content h3 {
+  font-family: var(--font-head);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-top: 2.5em;
+  margin-bottom: 0;
+  line-height: 1.3;
+}
+
+.markdown-content ul,
+.markdown-content ol {
+  margin: 1.5em 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.markdown-content h2 + ul,
+.markdown-content h2 + ol,
+.markdown-content h3 + ul,
+.markdown-content h3 + ol {
+  margin-top: 1.5em;
+}
+
+.markdown-content li {
+  position: relative;
+  padding-left: 1.75em;
+  margin-bottom: 0.75em;
+  color: var(--text-muted);
+  line-height: 1.75;
+}
+
+.markdown-content ul li::before {
+  content: '•';
+  position: absolute;
+  left: 0.5em;
+  color: var(--text-muted);
+  font-size: 1.2em;
+  line-height: 1.5;
+  opacity: 0.4;
+}
+
+.markdown-content ol {
+  counter-reset: list-counter;
+}
+
+.markdown-content ol li {
+  counter-increment: list-counter;
+  padding-left: 2em;
+}
+
+.markdown-content ol li::before {
+  content: counter(list-counter) '.';
+  position: absolute;
+  left: 0;
+  color: var(--text-muted);
+  opacity: 0.5;
+  font-weight: 500;
+}
+
+.markdown-content a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-color: rgba(217, 29, 65, 0.3);
+  text-underline-offset: 3px;
+  transition: text-decoration-color 0.2s ease;
+}
+
+.markdown-content a:hover {
+  text-decoration-color: var(--accent);
+}
+
+.markdown-content strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.markdown-content blockquote {
+  background: rgba(255, 255, 255, 0.02);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 6px 6px 0;
+  padding: 1.25em 1.5em;
+  margin: 1.5em 0;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.markdown-content blockquote p {
+  margin-bottom: 0;
+}
+
+.markdown-content blockquote p:not(:last-child) {
+  margin-bottom: 0.75em;
 }

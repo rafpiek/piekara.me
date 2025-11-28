@@ -18,7 +18,7 @@ export default function Home() {
       {/* APPS (Commercial) */}
       <h2 className="section-title">Commercial Apps</h2>
       <div className="app-grid" id="apps">
-        
+
         {/* App 1 - Tapaterra */}
         <div className="app-card">
           <div className="app-header">
@@ -94,7 +94,7 @@ export default function Home() {
               <li><Link href="/gdpr">Cookie Settings</Link></li>
             </ul>
           </div>
-          
+
           {/* Product Specific */}
           <div className="legal-col">
             <h4>Tapaterra App</h4>
