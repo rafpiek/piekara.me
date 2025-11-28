@@ -17,16 +17,43 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                href="/projects"
+                href="/apps/tapaterra"
+                className="px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-full hover:from-blue-600 hover:to-purple-700 transition-all transform hover:scale-105"
+              >
+                🏳️ Try Tapaterra App
+              </Link>
+              <Link
+                href="/apps"
                 className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-full hover:from-blue-700 hover:to-purple-700 transition-all transform hover:scale-105"
               >
-                View My Projects
+                View All Apps
               </Link>
               <Link
                 href="/info-hub"
                 className="px-8 py-4 bg-white dark:bg-slate-800 text-slate-800 dark:text-white font-semibold rounded-full border border-slate-300 dark:border-slate-600 hover:bg-slate-50 dark:hover:bg-slate-700 transition-all transform hover:scale-105"
               >
                 Learn More About Me
+              </Link>
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-r from-blue-500 to-purple-600 rounded-3xl p-12 text-center text-white mb-16">
+            <h2 className="text-3xl font-bold mb-4">🏳️ Featured App: Tapaterra</h2>
+            <p className="text-xl mb-6 max-w-3xl mx-auto">
+              An engaging educational app that makes learning world flags and country information fun and accessible, especially designed for kids but enjoyable for all ages.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link
+                href="/apps/tapaterra"
+                className="px-8 py-3 bg-white text-blue-600 font-semibold rounded-full hover:bg-slate-100 transition-colors"
+              >
+                Learn More
+              </Link>
+              <Link
+                href="/apps"
+                className="px-8 py-3 border-2 border-white text-white font-semibold rounded-full hover:bg-white hover:text-blue-600 transition-all"
+              >
+                View All Apps
               </Link>
             </div>
           </div>

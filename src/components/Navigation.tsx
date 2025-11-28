@@ -7,6 +7,7 @@ interface NavigationProps {
 export default function Navigation({ currentPage = "" }: NavigationProps) {
   const navItems = [
     { href: "/", label: "Home" },
+    { href: "/apps", label: "Apps" },
     { href: "/info-hub", label: "Info Hub" },
     { href: "/projects", label: "Projects" },
     { href: "/gdpr", label: "GDPR" },
