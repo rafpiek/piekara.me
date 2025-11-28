@@ -9,11 +9,12 @@ export default function Navigation() {
   const navItems = [
     { href: "/apps", label: "Apps" },
     { href: "/projects", label: "Projects" },
-    { href: "/gdpr", label: "Docs" },
+    { href: "/#social", label: "Contact" },
+    { href: "/info-hub", label: "Info Hub" },
   ];
 
   return (
-    <header className="py-10 flex justify-between items-center">
+    <header className="sticky top-0 z-50 -mx-6 px-6 py-6 flex justify-between items-center bg-[var(--bg)]/80 backdrop-blur-md border-b border-transparent transition-all duration-300 [&:not(:hover)]:border-b-white/5">
       <Link href="/" className="font-[family-name:var(--font-head)] text-xl font-semibold tracking-tight">
         piekara<span className="text-[var(--accent)]">.me</span>
       </Link>
