@@ -2,14 +2,14 @@ import { Linkedin, Youtube, Instagram, Music2, AtSign, FileText } from "lucide-r
 import { XIcon, BlueskyIcon } from "@/components/icons/SocialIcons";
 
 const socials = [
-  { href: "https://x.com/grubykodzi", label: "X / Twitter", Icon: XIcon, hoverColor: "group-hover:text-[var(--text)]" },
-  { href: "https://linkedin.com/in/grubykodzi", label: "LinkedIn", Icon: Linkedin, hoverColor: "group-hover:text-[#0A66C2]" },
-  { href: "https://youtube.com/@grubykodzi", label: "YouTube", Icon: Youtube, hoverColor: "group-hover:text-[#FF0000]" },
-  { href: "https://instagram.com/grubykodzi", label: "Instagram", Icon: Instagram, hoverColor: "group-hover:text-[#E4405F]" },
-  { href: "https://tiktok.com/@grubykodzi", label: "TikTok", Icon: Music2, hoverColor: "group-hover:text-[var(--text)]" },
-  { href: "https://bsky.app/profile/grubykodzi.pl", label: "Bluesky", Icon: BlueskyIcon, hoverColor: "group-hover:text-[#0085FF]" },
-  { href: "https://threads.net/@grubykodzi", label: "Threads", Icon: AtSign, hoverColor: "group-hover:text-[var(--text)]" },
-  { href: "https://grubykodzi.pl/me", label: "Blog", Icon: FileText, hoverColor: "group-hover:text-[var(--accent)]" },
+  { href: "https://x.com/raf_piek", label: "X / Twitter", Icon: XIcon, hoverColor: "group-hover:text-[var(--text)]" },
+  { href: "https://www.linkedin.com/in/rafalpiekara/", label: "LinkedIn", Icon: Linkedin, hoverColor: "group-hover:text-[#0A66C2]" },
+  { href: "https://www.youtube.com/@grubykodzi", label: "YouTube", Icon: Youtube, hoverColor: "group-hover:text-[#FF0000]" },
+  { href: "https://www.instagram.com/rafalpiekara/", label: "Instagram", Icon: Instagram, hoverColor: "group-hover:text-[#E4405F]" },
+  { href: "https://www.tiktok.com/@grubykodzi", label: "TikTok", Icon: Music2, hoverColor: "group-hover:text-[var(--text)]" },
+  { href: "https://bsky.app/profile/rafalpiekara.bsky.social", label: "Bluesky", Icon: BlueskyIcon, hoverColor: "group-hover:text-[#0085FF]" },
+  { href: "https://www.threads.net/@rafalpiekara", label: "Threads", Icon: AtSign, hoverColor: "group-hover:text-[var(--text)]" },
+  { href: "https://grubykodzi.pl", label: "Blog (PL)", Icon: FileText, hoverColor: "group-hover:text-[var(--accent)]" },
 ];
 
 export default function SocialLinks() {
