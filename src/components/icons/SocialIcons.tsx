@@ -16,3 +16,4 @@ export const MailIcon = ({ className }: { className?: string }) => (
   </svg>
 );
 
+
