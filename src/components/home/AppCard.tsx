@@ -55,17 +55,19 @@ export default function AppCard({
         </div>
       )}
 
-      <div style={{ display: "flex", justifyContent: "flex-end", marginTop: "auto" }}>
-        {disabled ? (
-          <span className="app-link" style={{ cursor: "default", opacity: 0.6 }}>
-            {linkText}
-          </span>
-        ) : (
-          <Link href={href || "#"} className="app-link">
-            {linkText}
-          </Link>
-        )}
-      </div>
+      {href && (
+        <div style={{ display: "flex", justifyContent: "flex-end", marginTop: "auto" }}>
+          {disabled ? (
+            <span className="app-link" style={{ cursor: "default", opacity: 0.6 }}>
+              {linkText}
+            </span>
+          ) : (
+            <Link href={href} className="app-link">
+              {linkText}
+            </Link>
+          )}
+        </div>
+      )}
     </div>
   );
 }

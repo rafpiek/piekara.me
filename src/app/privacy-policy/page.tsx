@@ -6,12 +6,12 @@ import { BackLink } from "@/components/ui";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "GDPR Policy",
-  description: "GDPR compliance and data protection information for piekara.me",
+  title: "Privacy Policy",
+  description: "Privacy policy and information about data collection on piekara.me",
 };
 
-export default function GDPR() {
-  const filePath = path.join(process.cwd(), "src/content/gdpr.md");
+export default function PrivacyPolicy() {
+  const filePath = path.join(process.cwd(), "src/content/privacy-policy.md");
   const content = fs.readFileSync(filePath, "utf8");
 
   const stats = fs.statSync(filePath);
@@ -31,7 +31,7 @@ export default function GDPR() {
 
             <div className="mb-12">
               <h1 className="text-4xl md:text-5xl font-bold tracking-tighter leading-[0.9] mb-6">
-                <span className="text-[var(--text-muted)]">GDPR Policy</span>
+                <span className="text-[var(--text-muted)]">Privacy Policy</span>
               </h1>
               <div className="h-1 w-20 bg-[var(--accent)] rounded-full"></div>
             </div>

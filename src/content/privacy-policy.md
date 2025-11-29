@@ -1,97 +1,451 @@
-## Introduction
+# English Version
 
-This is great pattern
-Welcome to my personal website. This Privacy Policy explains how I collect, use, and protect your information when you visit piekara.me. I am committed to protecting your personal data and ensuring compliance with the General Data Protection Regulation (GDPR) and other applicable privacy laws.
+# Privacy Policy
 
-## Data Controller
+## **Introduction**
 
-* **Name:** Rafał Piekara
-* **Website:** <https://piekara.me>
-* **Purpose:** Personal portfolio and information sharing
-* **Contact:** For privacy inquiries, please use the contact information provided in the Info Hub section
+Since you found this document, it means that the security of your data is important to you. Know that when you run a business under the name of
 
-## Information I Collect
+Rafał Piekara
 
-### Automatically Collected Information
+Jodlowka-Walki 106b
 
-* IP address (anonymized where possible)
-* Browser type and version
-* Operating system
-* Pages visited and time spent on pages
-* Referring website
-* General location information (country/region level)
+33-150 Jodlowka-Walki
 
-### Information You Provide Voluntarily
+NIP 8733262929
 
-* Contact form submissions (name, email, message)
-* Comments or feedback
-* Newsletter subscription (if applicable)
+REGON 367682802
 
-## How I Use Your Information
+We take care of the proper treatment of your personal data. Our goal is to properly inform about matters related to the processing of personal data, in particular with regard to the content of the provisions on the protection of personal data, including Regulation (EU) 2016/679 of the European Parliament and of the Council of April 27, 2016 on the protection of individuals in connection with the processing of personal data and on the free movement of such data, and repealing Directive 95/46 / EC (hereinafter: "GDPR"). In this Privacy Policy, we inform you about the legal grounds for the processing of personal data, the methods of their collection and use, as well as about your rights related to it.
 
-* To provide and maintain my website
-* To respond to your inquiries and messages
-* To improve user experience and website performance
-* To analyze website traffic and usage patterns
-* To ensure website security and prevent fraud
-* To comply with legal obligations
+This Privacy Policy also meets the requirements set out in the Telecommunications Law of September 15, 2017, in connection with the use of cookies. As the owner of websites:
 
-## Legal Basis for Processing
+- grubykodzi.pl
+- grubymailing.pl
+- technicznypm.pl
+- szkolaror.pl
+- unidevsity.pl
+- rubymailing.com
 
-I process your personal data based on the following legal grounds under GDPR:
+we are obliged to inform you about the above-mentioned files that the website uses.
 
-* **Legitimate Interest:** For website analytics and security monitoring
-* **Consent:** When you voluntarily provide information through contact forms
-* **Legal Obligation:** When required by law to retain certain information
+## **Personal Data**
 
-## Third-Party Services
+### **2.1. When does the Privacy Policy apply?**
 
-This website may use the following third-party services:
+The Privacy Policy applies to all cases in which we process your personal data. This applies both to cases in which we process personal data obtained directly from you and cases in which your personal data has been obtained from other sources.
 
-* **Hosting Providers:** Vercel/Netlify for website hosting
-* **Analytics:** Privacy-focused analytics tools (if any)
-* **CDN:** Content Delivery Networks for performance optimization
+1. How, on what legal basis and what type of personal data do we process?
 
-## Your Rights Under GDPR
+We are transparent about the methods and legal grounds for processing personal data, as well as the purposes for which we process personal data. We make sure that each time we provide the necessary information in this regard. In order to make the explanation of these issues as clear as possible, we present the following list of personal data processing operations in connection with the websites operated.
 
-Under GDPR, you have the following rights regarding your personal data:
+At the same time, we would like to point out that whenever we process personal data on the basis of a legitimate interest (6 section 1 letter f of GDPR), we try to analyze and balance our interest and the potential impact on your data (positive and negative) and your rights under the provisions of protection of personal data.
 
-* **Right to Access:** Request copies of your personal data
-* **Right to Rectification:** Request correction of inaccurate data
-* **Right to Erasure:** Request deletion of your personal data
-* **Right to Restrict Processing:** Limit how your data is used
-* **Right to Data Portability:** Request transfer of your data
-* **Right to Object:** Object to processing of your data
-* **Right to Withdraw Consent:** Revoke consent at any time
+### ***Processing of personal data of visitors to the website***
 
-## Data Security
+In connection with the use of the website, we process the following data sent by your browser to the server: IP address, date and time of session start, information about the time zone, information about the source page, access status / http access code, address of the page from which the access was made , browser type, operating system and its interface, language and version of the browser software.
 
-I implement appropriate technical and organizational measures to protect your personal data against unauthorized access, alteration, disclosure, or destruction. These include SSL encryption, secure hosting environments, and regular security updates.
+The processing of this data is necessary for the proper functioning of the website and for ensuring stability and security. They are processed on the basis of art. 6 sec. 1 lit. f GDPR.
 
-## Data Retention
+Explanations regarding cookies can be found in point 3 of this Privacy Policy.
 
-I retain your personal data only as long as necessary for the purposes outlined in this policy, unless a longer retention period is required by law. Contact form submissions are typically retained for 12 months for communication purposes.
+### ***Processing of personal data as part of the newsletter***
 
-## Cookies
+By subscribing to the newsletter, you provide us with your name and email address via the newsletter subscription form. Providing data is voluntary, but necessary to subscribe to the newsletter. The legal basis for the processing of personal data is Art. 6 sec. 1 lit. a GDPR.
 
-This website may use cookies to enhance your browsing experience:
+You can revoke your consent at any time.
 
-* **Essential Cookies:** Required for website functionality
-* **Analytics Cookies:** To understand website usage (anonymized)
-* **Preference Cookies:** To remember your settings
+The full scope of your rights and obligations in connection with the processing of personal data (in accordance with Article 13 of the GDPR) is included in the information clause in point 2.5. Privacy Policy.
 
-You can control cookies through your browser settings. Disabling cookies may affect website functionality.
+### ***Processing of personal data as part of Google Analytics***
 
-## International Data Transfers
+This website uses Google Analytics, a web analytics service provided by Google Inc. (1600 Amphitheater Parkway, Mountain View, CA 94043, USA). Google Analytics uses cookies that are stored on your computer and that allow an analysis of the use of the website by you. The information generated by the cookies on your use of the website is usually transferred to a Google server in the USA and stored there. On behalf of the operator of this website, Google will use this information to evaluate your use of the website, to compile reports on website activity and to provide other services related to website activity and internet usage to the website operator.
 
-If your data is transferred outside the EU/EEA, I ensure adequate protection through appropriate safeguards such as Standard Contractual Clauses (SCCs) or other GDPR-compliant mechanisms.
+The IP address transmitted by Google Analytics will not be merged with other data by Google. We use this tool to analyze and regularly improve the use of the website.
 
-## Changes to This Policy
+You can prevent the storage of cookies by setting your browser software accordingly or by using the appropriate browser plug-in.
 
-I may update this Privacy Policy from time to time to reflect changes in my practices or applicable law. The updated policy will be posted on this page with a revised "Last updated" date.
+The legal basis for the processing of personal data is Art. 6 sec. 1 lit. f GDPR.
 
-## Contact Information
+The full scope of your rights and obligations in connection with the processing of personal data (in accordance with Article 13 of the GDPR) is included in the information clause in point 2.5. Privacy Policy.
 
-If you have any questions about this Privacy Policy or wish to exercise your GDPR rights, please contact me using the information provided in the Info Hub section.
+### ***Facebook Pixel***
 
-> **Data Protection Concerns:** If you believe your data protection rights have been violated, you have the right to lodge a complaint with your local data protection authority.
+My pages use Facebook Pixel (publisher: Facebook Inc., 1601 S. California Ave. Palo Alto, CA 94304, USA) to advertise these websites on Facebook.
+
+### ***Social Media***
+
+On the website you can find links to social networks, where information about us and our activities is posted. As the owner of the social account, we are the data controller of the social network, as well as the owner of the given social network.
+
+## **How long is your personal data processed?**
+
+The time during which we will process personal data depends on the legal basis for their processing. Please be advised that:
+
+1. if we process personal data on the basis of consent, the processing period lasts until the intended purpose is achieved or the consent is withdrawn;
+2. in the event that we process personal data for the purpose of performing the contract or taking steps prior to the performance of the contract (performance of the contract), for the duration of the contract, and after its completion for the period of limitation of claims and archiving of accounting documentation (5 years), in accordance with applicable law;
+3. if we process personal data on the basis of a legitimate interest, the processing period lasts until the termination of the above-mentioned interest (e.g. the limitation period for civil law claims) or until you object to further such processing - in situations where such objection is vested in accordance with the provisions of law;
+4. In the event that we process personal data because it is necessary due to applicable law, the periods of data processing for this purpose are determined by these provisions.‍
+5. When and how are personal data shared with third parties? Do we transfer data to third countries?
+
+We provide personal data to others only when permitted by law. In such a case, in the relevant agreement concluded with a third party, we provide for provisions and security mechanisms to protect data and maintain standards in the field of data protection, confidentiality and security.
+
+In a situation where we transfer personal data, of which we are the administrator, to other entities for the performance of specific activities on our behalf, we conclude a special agreement with such entity. Such agreements are called personal data processing agreements (Article 28 of the GDPR- ,,RODO’’), thanks to which we have control over how and to what extent the entity entrusted with the processing of certain categories of personal data processes this data.
+
+Your data may be processed by third parties to whom I commission the performance of individual activities related to ensuring the proper functioning of the website. Entities to whom I commission the processing of personal data guarantee the use of appropriate measures for the protection and security of personal data required by law. Entities entrusted with data processing are:
+
+- Zenbox Sp. z o.o. headquarters in Częstochowa, address: Dąbrowskiego street 7 business establishment 6, 42-202 Częstochowa, NIP: 9492191021 - to store personal data on the server,
+- ActiveCampaign LLC, 1 North Dearborn Street, Suite 500, Chicago, IL 60602, USA - in order to use the mailing system in which your data is processed, if you sign up for the newsletter
+
+## **What are your rights and how to exercise them? [information clause]**
+
+You have certain rights regarding your personal data, and we, as their administrator, are responsible for the implementation of these rights in accordance with applicable law. In case of any questions and requests regarding the scope and exercise of your rights, you can contact us under the following data:
+
+rafal@piekara.me
+
+We will respond to the message we receive from you as soon as we verify your identity.
+
+1. *Access to personal data*
+
+You have the right to access your data that we store as an administrator. You can exercise this right by contacting us using the contact details provided.
+
+1. *Change of personal data, rectification or deletion*
+
+Changes, including updating, rectifying or deleting your personal data that we process, can be made by contacting us using the contact details provided.
+
+You can use the right to delete data, for example, when your data is no longer necessary for the purposes for which it was collected by us or when you withdraw your consent to data processing.
+
+1. *Withdrawal of consent*
+
+In the case of processing personal data on the basis of consent, you can withdraw this consent at any time. We inform you about this almost at any time when collecting consent and make it possible to withdraw consent as easily as it was granted. To withdraw your consent, please contact us using the contact details provided.
+
+1. *The right to limit the processing or object to the processing of personal data*
+
+You have the right to limit the processing or object to the processing of your personal data at any time, due to a special situation, unless the processing is required in accordance with the law.
+
+You can object to the processing of your personal data when:
+
+- the processing of personal data takes place on the basis of a legitimate interest or for statistical purposes, and the objection is justified by a specific situation;
+- personal data is processed for direct marketing purposes, including profiling for this purpose.
+
+On the other hand, with regard to the request to limit data processing, we would like to inform you that it is due when:
+
+- you question the correctness of personal data - for a period that allows us to check the correctness of this data;
+- the processing is unlawful, and you oppose the deletion of personal data, requesting the restriction of their use instead;
+- we no longer need personal data for the purposes of processing, but you need them to establish, assert or defend claims;
+- you have objected under Art. 21 sec. 1 RODO against the processing of data by us until we determine whether the legitimate grounds on our part override your grounds for objection.
+
+5.  *Right to data portability*
+
+You have the right to transfer the data concerning you and you have the right to transfer this data through us to another administrator if:
+
+- processing is based on consent, pursuant to art. 6 sec. 1 lit. a GDPR or art. 9 sec. 2 lit. a GDPR; or
+- processing is based on a contract, pursuant to Art. 6 sec. 1 lit. b GDPR; and
+- processing is carried out in an automated manner.
+
+When exercising the right to data portability, you may request that personal data be sent by us directly to another administrator, if technically possible.
+
+The right to data portability may not adversely affect the rights and freedoms of others. If you wish to exercise these rights, please contact us using the contact details provided.
+
+1. *Any other questions, concerns and complaints*
+
+Should you have any questions, concerns or concerns regarding the content of this Privacy Policy or the manner in which personal data is processed, as well as complaints regarding these matters, please contact us using the contact details provided with details of the complaint. Any complaints received will be considered and answered.
+
+You also have the right to lodge a complaint with the supervisory authority, which is the President of the Personal Data Protection Office,Stawki street 2, 00-193 Warsaw.
+
+## **Cookies**
+
+As indicated in point 2.2. Cookies are used on this website. Therefore, we inform you about the most important elements of cookies, so that the use of our website is clear and understandable for you.
+
+1.What are cookies?
+
+Cookies are small files saved on your electronic device by the websites you visit. Cookies contain various information that is often necessary for the website to function properly. Cookies are encrypted in such a way that unauthorized persons cannot access them. The information collected on the basis of cookies can only be read by us and - for technical reasons - trusted partners whose services we use. Most importantly, cookies cannot run programs or transmit viruses to electronic devices.
+
+1. For what purpose do we use cookies?
+
+Basic cookies - installed if consent has been given using the software settings installed on your electronic device. The basic cookies are technical and analytical.
+
+Technical cookies - they are necessary for the website to function properly.
+
+Cookies are used to:
+
+- ensure the proper display of the website - depending on what device you use,
+- adapt the content to your choices which are technically important for the operation of the website, e.g. selected language,
+- remember whether you have consented to the display of certain content.
+
+Analytical cookies - they are necessary to settle accounts with business partners or measure the effectiveness of marketing activities without identifying personal data and to improve the functioning of the website. They can be used to:
+
+- study traffic statistics on the website and check traffic sources (redirection directions),
+- detect various types of abuse, e.g. artificial Internet traffic (bots).
+
+3.3.    How long are cookies used?
+
+Session cookies - they remain on your device until you leave the website or turn off the software (web browser). These are primarily technical cookies.
+
+Permanent cookies - they remain on your device for the time specified in the file parameters or until you manually delete them.
+
+1. Can you opt out of accepting cookies?
+
+You can always change your browser settings and decline requests to install cookies. However, before you decide to change the settings, please note that cookies serve your convenience when using the website. Disabling cookies may cause the website to be displayed incorrectly in your browser.
+
+1. How to disable cookies?
+
+You can delete cookies from your browser at any time and block the possibility of their reinstallation.
+
+Depending on the browser you use, the option to delete or withdraw consent to the installation of cookies may differ. In such a situation, please refer to the operating instructions available within the given browser on your electronic device.
+
+I also use third party cookies:
+
+- Google Analytics (publisher: Google LLC, 1600 Amphitheater Parkway, Mountain View, CA 94043, USA) - to create statistics and analyze them for website optimization,
+- Google Adwords (publisher: Google LLC, 1600 Amphitheater Parkway, Mountain View, CA 94043, USA) - to promote my website,
+- Facebook Pixel (publisher: Facebook Inc., 1601 S. California Ave. Palo Alto, CA 94304, USA) - to advertise my website on Facebook,
+- Disqus (publisher: Disqus Inc., 717 Market St. San Francisco, CA 94103) - for blog comments.
+
+## **Final Provisions**
+
+Are changes to this Privacy Policy possible and when?
+
+We reserve the right to change this Privacy Policy in the event of changes in the technology with which we process personal data, as well as in the event of changes in the methods, purposes or legal grounds for the processing of personal data and due to new legal provisions, new guidelines of authorities responsible for supervising the protection processes. personal data.
+
+In order to ensure the best possible contact regarding the protection of personal data, we enable contact based on the following contact details:
+
+Rafał Piekara
+
+Jodlowka-Walki 106b
+
+33-150 Jodlowka-Walki
+
+NIP 8733262929
+
+REGON 367682802
+
+email: *rafal@piekara.me*
+
+# Polish Version
+
+# Polityka Prywatności
+
+## **Wprowadzenie**
+
+Skoro trafiłeś do tego dokumentu, to znaczy, że ważne jest dla Ciebie bezpieczeństwo Twoich danych. Wiedz, że prowadząc działalność gospodarczą pod firmą
+
+Rafał Piekara
+
+Jodłówka–Wałki 106b
+
+33-150 Jodłówka-Wałki
+
+NIP 8733262929
+
+REGON 367682802
+
+dbamy o odpowiednie traktowanie Twoich danych osobowych. Naszym celem jest należyte informowanie o sprawach związanych z przetwarzaniem danych osobowych, szczególnie wobec treści przepisów o ochronie danych osobowych, w tym rozporządzenia Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27.04.2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (dalej: „RODO”). W niniejszej Polityce Prywatności informujemy o podstawach prawnych przetwarzania danych osobowych, sposobach ich zbierania i wykorzystywania, a także o Twoich prawach z tym związanych.
+
+Niniejsza Polityka Prywatności spełnia również wymagania postawione w ramach ustawy z dnia 15 września 2017 r. prawo telekomunikacyjne, w związku z wykorzystywaniem plików cookies (ciasteczka). Jako właściciel serwisów internetowych:
+
+- grubykodzi.pl
+- grubymailing.pl
+- technicznypm.pl
+- szkolaror.pl
+- unidevsity.pl
+
+zobowiązani jesteśmy do informowania o ww. plikach, które serwis wykorzystuje.
+
+## **Dane osobowe**
+
+### **2.1. Kiedy Polityka Prywatności ma zastosowanie?**
+
+Polityka Prywatności ma zastosowanie do wszystkich przypadków, w których przetwarzamy Twoje dane osobowe. Dotyczy to zarówno przypadków, w których przetwarzamy dane osobowe pozyskane bezpośrednio od Ciebie, jak i przypadków, w których Twoje dane osobowe pozyskano z innych źródeł.
+
+1. W jaki sposób, w oparciu o jakie podstawy prawne i jakiego typu dane osobowe przetwarzamy?
+
+Zachowujemy przejrzystość w zakresie sposobów i podstaw prawnych przetwarzania danych osobowych, a także celów, dla których przetwarzamy dane osobowe. Dbamy o to, by każdorazowo wskazać niezbędne informacje w tym zakresie. Kierując się tym, by wyjaśnienie tych kwestii było jak najbardziej czytelne, przedstawiamy poniższe zestawienie operacji przetwarzania danych osobowych, w związku z prowadzonymi stronami internetowymi.
+
+Jednocześnie wskazujemy, że ilekroć przetwarzamy dane osobowe na podstawie prawnie uzasadnionego interesu (art. 6 ust. 1 lit. f RODO), staramy się przeanalizować i zrównoważyć nasz interes oraz potencjalny wpływ na Twoje dane (pozytywny, jak i negatywny) oraz Twoje prawa wynikające z przepisów o ochronie danych osobowych.
+
+### ***Przetwarzanie danych osobowych osób odwiedzających stronę internetową***
+
+W związku z korzystaniem ze strony internetowej przetwarzamy następujące dane przesyłane przez Twoją przeglądarkę na serwer: adres IP, data i godzina rozpoczęcia sesji, informacje o strefie czasowej, informacje o stronie źródłowej, status dostępu/kod dostępu http, adres strony, z której nastąpiło wejście, rodzaj przeglądarki, system operacyjny i jego interfejs, język i wersja oprogramowania przeglądarki.
+
+Przetwarzanie tych danych jest niezbędne do prawidłowego działania strony internetowej oraz zapewnienia stabilności i bezpieczeństwa. Przetwarzanie ich odbywa się na podstawie art. 6 ust. 1 lit. f RODO.
+
+Wyjaśnienia dotyczące plików cookies można znaleźć w pkt 3 niniejszej Polityki Prywatności.
+
+### ***Przetwarzanie danych osobowych w ramach newslettera***
+
+Zapisując się do newslettera, przekazujesz nam za pośrednictwem formularza zapisu do newslettera swoje dane w postaci imienia i adresu email. Podanie danych jest dobrowolne, lecz konieczne, by zapisać się do newslettera. Podstawę prawną przetwarzania danych osobowych stanowi art. 6 ust. 1 lit. a RODO.
+
+W każdej chwili wyrażoną zgodę możesz odwołać.
+
+Pełny zakres Twoich praw i obowiązków w związku z przetwarzaniem danych osobowych (zgodny z art. 13 RODO) umieszczony został w klauzuli informacyjnej w pkt 2.5. Polityki Prywatności.
+
+### ***Przetwarzanie danych osobowych w ramach Google Analytics***
+
+Niniejsza strona internetowa korzysta z Google Analytics, czyli usługi analizy oglądalności stron internetowych udostępnianej przez Google Inc (1600 Amphitheatre Parkway, Mountain View, CA 94043, USA). Google Analytics wykorzystuje pliki cookies przechowywane na Twoim komputerze, które umożliwiają analizę korzystania z witryny. Informacje generowane przez pliki cookies na temat korzystania ze strony internetowej są zazwyczaj przesyłane na serwer Google w USA i tam przechowywane. W imieniu operatora tej witryny Google wykorzystuje te informacje do oceny korzystania z witryny, sporządzania raportów dotyczących aktywności na stronie oraz świadczenia innych usług związanych z korzystaniem z witryny i korzystaniem z Internetu u operatora strony internetowej.
+
+Adres IP przesłany przez Google Analytics nie zostanie połączony z innymi danymi przez Google. Używamy tego narzędzia do analizowania i regularnego ulepszania korzystania z witryny.
+
+Możesz zapobiec przechowywaniu plików cookies, odpowiednio ustawiając oprogramowanie przeglądarki lub korzystając z odpowiedniej wtyczki do przeglądarki.
+
+Podstawę prawną przetwarzania danych osobowych stanowi art. 6 ust. 1 lit. f RODO.
+
+Pełny zakres Twoich praw i obowiązków w związku z przetwarzaniem danych osobowych (zgodny z art. 13 RODO) umieszczony został w klauzuli informacyjnej w pkt 2.5. Polityki Prywatności.
+
+### ***Facebook Pixel***
+
+Moje strony wykorzystują Facebook Pixel (wydawca: Facebook Inc., 1601 S. California Ave. Palo Alto, CA 94304, USA) w celu reklamowania tych serwisów w serwisie Facebook.
+
+### ***Social Media***
+
+Na stronie znaleźć możesz linki do portali społecznościowych, gdzie zamieszczone są informacje o nas i naszej działalności. Administratorem danych w ramach portalu społecznościowego jesteśmy zarówno my jako właściciel konta społecznościowego, jak i sam właściciel danego portalu społecznościowego.
+
+## **Jak długo przetwarzane są Twoje dane osobowe?**
+
+Czas, przez jaki będziemy przetwarzać dane osobowe, jest uzależniony od podstawy prawnej ich przetwarzania. Informujemy, że:
+
+1. w przypadku, gdy przetwarzamy dane osobowe na podstawie zgody, okres przetwarzania trwa do momentu osiągnięcia zamierzonego celu lub wycofania zgody;
+2. w przypadku, gdy przetwarzamy dane osobowe dla celów wykonania umowy lub podjęcia czynności przed wykonaniem umowy (realizacja zamówienia), przez okres realizacji zamówienia, a po jego zakończeniu przez okres przedawnienia roszczeń i archiwizacji dokumentacji księgowej (5 lat), zgodnie z obowiązującymi przepisami prawa;
+3. w przypadku, gdy przetwarzamy dane osobowe na podstawie uzasadnionego interesu, okres przetwarzania trwa do momentu ustania ww. interesu (np. okres przedawnienia roszczeń cywilnoprawnych) lub do momentu sprzeciwienia się dalszemu takiemu przetwarzaniu – w sytuacjach, gdy sprzeciw taki zgodnie z przepisami prawa przysługuje;
+4. w przypadku, gdy przetwarzamy dane osobowe, ponieważ jest to konieczne z uwagi na obowiązujące przepisy prawa, okresy przetwarzania danych w tym celu określają te przepisy.
+5. Kiedy i w jaki sposób udostępniane są dane osobowe podmiotom trzecim? Czy przekazujemy dane do państw trzecich?
+
+Przekazujemy dane osobowe innym wyłącznie gdy zezwalają na to przepisy prawa. W takim przypadku, w stosownej umowie zawieranej z podmiotem trzecim przewidujemy postanowienia i mechanizmy bezpieczeństwa w celu ochrony danych oraz zachowania standardów w zakresie ochrony danych, ich poufności i bezpieczeństwa.
+
+W sytuacji, w której przekazujemy dane osobowe, których jesteśmy administratorem innym podmiotom dla realizacji określonych czynności w swoim imieniu, zawieramy z takim podmiotem szczególną umowę. Umowy tego rodzaju zwane są umowami powierzenia przetwarzania danych osobowych (art. 28 RODO), dzięki temu mamy kontrolę nad tym, w jaki sposób i w jakim zakresie podmiot, któremu powierzyliśmy przetwarzanie określonych kategorii danych osobowych dane te przetwarza.
+
+Twoje dane mogą być przetwarzane przez podmioty trzecie, którym zlecam wykonanie poszczególnych czynności związanych z zapewnieniem właściwego funkcjonowania strony internetowej. Podmioty, którym zlecam przetwarzanie danych osobowych, gwarantują stosowanie odpowiednich środków ochrony i bezpieczeństwa danych osobowych wymaganych przez przepisy prawa. Podmioty, którym powierzam przetwarzanie danych, to:
+
+- Zenbox Sp. z o.o. siedzibą w Częstochowie, adres: ul. Dąbrowskiego 7 lokal 6, 42-202 Częstochowa, NIP: 9492191021 – w celu przechowywania danych osobowych na serwerze,
+- ActiveCampaign LLC, 1 North Dearborn Street, Suite 500, Chicago, IL 60602, USA – w celu korzystania z systemu mailingowego, w którym przetwarzane są Twoje dane, jeżeli zapiszesz się do newslettera,
+
+## **Jakie prawa Ci przysługują i jaki jest sposób ich realizacji? [klauzula informacyjna]**
+
+Posiadasz określone prawa dotyczące Twoich danych osobowych, a my jako ich administrator odpowiadamy za realizację tych praw zgodnie z obowiązującymi przepisami prawa. W przypadku wszelkich pytań i próśb dotyczących zakresu i realizacji praw możesz skontaktować się pod następującymi danymi:
+
+rafal@piekara.me
+
+Na otrzymaną od Ciebie wiadomość odpowiemy zaraz po zweryfikowaniu Twojej tożsamości.
+
+1. *Dostęp do danych osobowych*
+
+Masz prawo dostępu do Twoich danych, które przechowujemy jako administrator. Prawo to możesz wykonać poprzez zwrócenie się do nas na podane dane kontaktowe.
+
+1. *Zmiana danych osobowych ich sprostowanie, lub usunięcie*
+
+Zmiany, w tym zaktualizowanie, sprostowanie lub usunięcie Twoich danych osobowych które przetwarzamy możesz dokonać poprzez zwrócenie się do nas na podane dane kontaktowe.
+
+Z prawa do usunięcia danych możesz skorzystać np. gdy Twoje dane nie będą już niezbędne do celów, dla których zostały zebrane przez nas albo gdy wycofasz swoją zgodę na przetwarzanie danych.
+
+1. *Wycofanie zgody*
+
+W przypadku przetwarzania danych osobowych na podstawie zgody, możesz w dowolnej chwili wycofać tę zgodę. Informujemy o tym prawie w każdym momencie zbierania zgód i umożliwiamy wycofanie zgody w tak łatwy sposób, jak jej udzielono. Celem cofnięcia zgody, prosimy o zwrócenie się do nas na podane dane kontaktowe.
+
+1. *Prawo do ograniczenia przetwarzania lub wniesienia sprzeciwu wobec przetwarzania danych osobowych*
+
+Masz prawo ograniczenia przetwarzania lub wniesienia sprzeciwu wobec przetwarzania Twoich danych osobowych w dowolnej chwili, ze względu na szczególną sytuację, chyba że przetwarzanie jest wymagane zgodnie z przepisami prawa.
+
+Możesz wnieść sprzeciw wobec przetwarzania Twoich danych osobowych, gdy:
+
+– przetwarzanie danych osobowych odbywa się na podstawie prawnie uzasadnionego interesu lub dla celów statystycznych, a sprzeciw jest uzasadniony przez szczególną sytuację;
+
+–  dane osobowe przetwarzane są na potrzeby marketingu bezpośredniego, w tym są profilowane dla tego celu.
+
+Z kolei w odniesieniu do żądania ograniczenia przetwarzania danych informujemy, że przysługuje ono gdy:
+
+– kwestionujesz prawidłowość danych osobowych – na okres pozwalający sprawdzić nam prawidłowość tych danych;
+
+– przetwarzanie jest niezgodne z prawem, oraz sprzeciwiasz się usunięciu danych osobowych, żądając w zamian ograniczenia ich wykorzystywania;
+
+– nie potrzebujemy już danych osobowych do celów przetwarzania, ale są one potrzebne Tobie, do ustalenia, dochodzenia lub obrony roszczeń;
+
+– wniosłeś sprzeciw na mocy art. 21 ust. 1 RODO wobec przetwarzania danych przez nas do czasu stwierdzenia, czy prawnie uzasadnione podstawy po naszej stronie są nadrzędne wobec Twoich podstaw sprzeciwu.
+
+*E.    Prawo do przenoszenia danych*
+
+Masz prawo do przeniesienie dotyczących Ciebie danych oraz masz prawo przesłania tych danych za naszym pośrednictwem innemu administratorowi, jeżeli:
+
+– przetwarzanie odbywa się na podstawie zgody, w myśl art. 6 ust. 1 lit. a RODO lub art. 9 ust. 2 lit. a RODO; lub
+
+– przetwarzanie odbywa się na podstawie umowy, w myśl art. 6 ust. 1 lit. b RODO; oraz
+
+– przetwarzanie odbywa się w sposób zautomatyzowany.
+
+Wykonując prawo do przenoszenia danych możesz żądać, by dane osobowe zostały przesłane przez nas bezpośrednio innemu administratorowi, o ile jest to technicznie możliwe.
+
+Prawo do przenoszenia danych nie może niekorzystnie wpływać na prawa i wolności innych osób. W przypadku chęci realizacji tych praw, należy zwrócić się do nas na podane dane kontaktowe.
+
+1. *Wszelkie pozostałe pytania, wątpliwości i skargi*
+
+W razie, gdyby pojawiły się jakiekolwiek pytania, zastrzeżenia lub wątpliwości dotyczące treści niniejszej Polityki Prywatności lub sposobu w jaki przetwarzane są dane osobowe, jak również skargi dotyczące tych kwestii, prosimy o zwrócenie się do nas na podane dane kontaktowe wraz ze szczegółowymi informacjami dotyczącymi skargi. Wszelkie otrzymane skargi zostaną rozpatrzone i udzielone zostaną na nie odpowiedzi.
+
+Masz również prawo wnieść skargę do organu nadzorczego, którym jest Prezes Urzędu Ochrony Danych Osobowych, ul. Stawki 2, 00-193 Warszawa.
+
+## **Pliki cookies (ciasteczka)**
+
+Jak wskazano w pkt 2.2. A w ramach niniejszej strony internetowej wykorzystywane są pliki cookies. W związku z tym informujemy Cię o najistotniejszych elementach plików cookies, tak aby korzystanie z naszej strony internetowej było dla Ciebie przejrzyste i zrozumiałe.
+
+1. Co to są pliki cookies?
+
+Pliki cookies (ciasteczka) są to małe pliki zapisywane na Twoim urządzeniu elektronicznym przez strony internetowe, które odwiedzasz. W plikach cookies zawarte są różne informacje, które są często niezbędne, aby strona działała prawidłowo. Pliki cookies są zaszyfrowane w taki sposób, aby osoby nieuprawnione nie miały do nich dostępu. Informacje zebrane na podstawie plików cookies możemy odczytać tylko my oraz – ze względów technicznych – zaufani partnerzy z których usług korzystamy. Co najważniejsze pliki cookies nie mogą uruchamiać programów ani przenosić wirusów na urządzenia elektroniczne.
+
+1. W jakim celu używamy plików cookies?
+
+Pliki cookies podstawowe – instalowane, jeśli wyrażono zgodę za pomocą ustawień oprogramowania zainstalowanego na Twoim urządzeniu elektronicznym. W ramach plików cookies podstawowych wyróżniamy techniczne i analityczne.
+
+Pliki cookies techniczne – są niezbędne, aby strona internetowa mogła prawidłowo działać.
+
+Pliki cookies wykorzystywane są aby:
+
+– zapewnić odpowiednie wyświetlanie strony internetowej – w zależności od tego, z jakiego urządzenia korzystasz,
+
+–  dostosowywać treść do Twoich wyborów mających techniczne znaczenie dla działania strony internetowej, np. wybranego języka,
+
+– zapamiętać, czy wyrażano zgodę na wyświetlanie niektórych treści.
+
+Pliki cookies analityczne – są niezbędne, aby rozliczać się z partnerami biznesowymi lub mierzyć efektywność działań marketingowych bez identyfikacji danych osobowych oraz ulepszać funkcjonowanie strony internetowej. Można je wykorzystywać, aby:
+
+– badać statystyki dotyczące ruchu na stronie internetowej oraz sprawdzać źródła ruchu (kierunki przekierowania),
+
+– wykrywać różnego rodzaju nadużycia np. sztuczny ruch internetowy (boty).
+
+3.3.    Jak długo korzysta się z plików cookies?
+
+Pliki cookies sesyjne – pozostają na Twoim urządzeniu, aż do opuszczenia strony internetowej lub wyłączenia oprogramowania (przeglądarki internetowej). Są to przede wszystkim pliki cookies techniczne.
+
+Pliki cookies stałe – pozostają na Twoim urządzeniu przez czas określony w parametrach pliku albo do momentu ich ręcznego usunięcia przez Ciebie.
+
+1. Czy możesz zrezygnować z akceptowania plików cookies?
+
+Zawsze możesz zmienić ustawienia przeglądarki i odrzucać prośby o instalowanie plików cookies. Zanim jednak zdecydujesz się zmienić ustawienia, zwróć uwagę, że pliki cookies służą Twojej wygodzie korzystania ze strony internetowej. Wyłączenie plików cookies może spowodować nieprawidłowe wyświetlanie się strony internetowej w Twojej przeglądarce.
+
+1. Jak wyłączyć obsługę plików cookies?
+
+W każdej chwili możesz usunąć pliki cookies ze swojej przeglądarki oraz zablokować możliwość ich ponownej instalacji.
+
+W zależności od wykorzystywanej przez Ciebie przeglądarki, opcja usunięcia lub cofnięcia zgody na instalacje plików cookies może się różnić. W takiej sytuacji należy zapoznać się z instrukcją obsługi dostępną w ramach danej przeglądarki występującej na Twoim urządzeniu elektronicznym.
+
+Wykorzystuję również cookies podmiotów zewnętrznych:
+
+- Google Analytics (wydawca: Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA) – w celu tworzenia statystyk i ich analizie dla optymalizacji strony,
+- Google Adwords (wydawca: Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA) – w celu promocji mojej strony internetowej,
+- Facebook Pixel (wydawca: Facebook Inc., 1601 S. California Ave. Palo Alto, CA 94304, USA) – w celu reklamowania mojej strony internetowej w serwisie Facebook,
+- Disqus (wydawca: Disqus Inc., 717 Market St. San Francisco, CA 94103) – w celu obsługi komentarzy na blogu.
+
+## **Postanowienia końcowe**
+
+Czy i kiedy możliwe są zmiany niniejszej Polityki Prywatności?
+
+Zastrzegamy sobie możliwość zmiany niniejszej Polityki Prywatności w przypadku zmian technologii, przy wykorzystaniu której przetwarzamy dane osobowe, a także w razie zmiany sposobów, celów lub podstaw prawnych przetwarzania danych osobowych oraz z uwagi na nowe przepisy prawa, nowe wytyczne organów odpowiedzialnych za nadzór nad procesami ochrony danych osobowych.
+
+Dążąc do zapewnienia jak najlepszego kontaktu w przedmiocie ochrony danych osobowych  umożliwiamy kontakt w oparciu o poniższe dane kontaktowe:
+
+*Rafał Piekara*
+
+Jodłówka-Wałki 106b
+
+33-150 Jodłówka-Wałki
+
+*NIP 8733262929*
+
+*REGON 367682802*
+
+*email: rafal@piekara.me*

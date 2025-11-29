@@ -6,12 +6,12 @@ import { BackLink } from "@/components/ui";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "GDPR Policy",
-  description: "GDPR compliance and data protection information for piekara.me",
+  title: "Terms and Conditions",
+  description: "Terms and conditions for using piekara.me and its services",
 };
 
-export default function GDPR() {
-  const filePath = path.join(process.cwd(), "src/content/gdpr.md");
+export default function TermsAndConditions() {
+  const filePath = path.join(process.cwd(), "src/content/terms-and-conditions.md");
   const content = fs.readFileSync(filePath, "utf8");
 
   const stats = fs.statSync(filePath);
@@ -31,7 +31,8 @@ export default function GDPR() {
 
             <div className="mb-12">
               <h1 className="text-4xl md:text-5xl font-bold tracking-tighter leading-[0.9] mb-6">
-                <span className="text-[var(--text-muted)]">GDPR Policy</span>
+                Terms and<br />
+                <span className="text-[var(--text-muted)]">Conditions</span>
               </h1>
               <div className="h-1 w-20 bg-[var(--accent)] rounded-full"></div>
             </div>
@@ -45,8 +46,7 @@ export default function GDPR() {
 
             <div className="pt-8 border-t border-[rgba(255,255,255,0.05)]">
               <p className="text-[var(--text-muted)] text-sm leading-relaxed">
-                This document explains how I collect, use, and protect your data. I value transparency and
-                your right to privacy.
+                This document outlines the rules and guidelines for using piekara.me and its services.
               </p>
             </div>
           </div>

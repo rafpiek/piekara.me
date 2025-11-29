@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { Home, Grid3X3, FolderOpen, MessageSquare, Info } from "lucide-react";
+import { Home, Grid3X3, MessageSquare, Info } from "lucide-react";
 
 export default function BottomTabBar() {
   const pathname = usePathname();
@@ -33,7 +33,6 @@ export default function BottomTabBar() {
   const navItems = [
     { href: "/", label: "Home", icon: Home },
     { href: "/apps", label: "Apps", icon: Grid3X3 },
-    { href: "/projects", label: "Projects", icon: FolderOpen },
     { href: "/#social", label: "Contact", icon: MessageSquare },
     { href: "/info-hub", label: "Info", icon: Info },
   ];

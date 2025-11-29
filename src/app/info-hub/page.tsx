@@ -6,22 +6,22 @@ import { MailIcon } from "@/components/icons/SocialIcons";
 export default function InfoHub() {
   const legalDocs = [
     {
-      title: "Privacy & GDPR Policy",
+      title: "GDPR Policy",
       description: "How I collect, use, and protect your personal data in compliance with GDPR.",
       href: "/gdpr",
-      icon: "🔒",
+      icon: "🛡️",
     },
     {
-      title: "Terms of Use",
+      title: "Terms and Conditions",
       description: "The rules and guidelines for using piekara.me and its services.",
-      href: "/gdpr",
+      href: "/terms-and-conditions",
       icon: "📜",
     },
     {
-      title: "Cookie Policy",
-      description: "Information about cookies and tracking technologies used on this site.",
-      href: "/gdpr",
-      icon: "🍪",
+      title: "Privacy Policy",
+      description: "Information about data collection, cookies, and privacy practices on this site.",
+      href: "/privacy-policy",
+      icon: "🔒",
     },
   ];
 
@@ -29,22 +29,22 @@ export default function InfoHub() {
     {
       app: "Tapaterra",
       docs: [
-        { title: "Privacy Policy", href: "/gdpr" },
-        { title: "Terms of Service", href: "/gdpr" },
+        { title: "GDPR Policy", href: "/gdpr" },
+        { title: "Terms and Conditions", href: "/terms-and-conditions" },
       ],
     },
     {
       app: "Wordee",
       docs: [
-        { title: "Privacy Policy", href: "/gdpr" },
-        { title: "Terms of Service", href: "/gdpr" },
+        { title: "GDPR Policy", href: "/gdpr" },
+        { title: "Terms and Conditions", href: "/terms-and-conditions" },
       ],
     },
     {
       app: "Zeyn",
       docs: [
-        { title: "Privacy Policy", href: "/gdpr" },
-        { title: "Terms of Service", href: "/gdpr" },
+        { title: "GDPR Policy", href: "/gdpr" },
+        { title: "Terms and Conditions", href: "/terms-and-conditions" },
       ],
     },
   ];
@@ -76,7 +76,7 @@ export default function InfoHub() {
         </div>
       </section>
 
-      <section className="mb-16">
+      <section className="mb-16 hidden">
         <SectionTitle>App Documentation</SectionTitle>
         <div className="grid md:grid-cols-3 gap-6">
           {appDocs.map((app) => (

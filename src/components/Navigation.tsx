@@ -9,7 +9,6 @@ export default function Navigation() {
 
   const navItems = [
     { href: "/apps", label: "Apps" },
-    { href: "/projects", label: "Projects" },
     { href: "/#social", label: "Contact" },
     { href: "/info-hub", label: "Info Hub" },
   ];
