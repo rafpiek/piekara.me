@@ -77,8 +77,6 @@ export default function Apps() {
             badge={app.badge}
             title={app.title}
             description={app.description}
-            href={app.href}
-            linkText={app.linkText}
             disabled={app.disabled}
             features={app.features}
           />

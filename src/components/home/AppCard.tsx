@@ -56,7 +56,7 @@ export default function AppCard({
       )}
 
       {href && (
-        <div style={{ display: "flex", justifyContent: "flex-end", marginTop: "auto" }}>
+        <div className="hidden" style={{ display: "none", justifyContent: "flex-end", marginTop: "auto" }}>
           {disabled ? (
             <span className="app-link" style={{ cursor: "default", opacity: 0.6 }}>
               {linkText}
