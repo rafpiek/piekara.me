@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>RS Football Academy - Aplikacja dla akademii piłkarskich</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #FFFFFF;
+      color: #111827;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 40px;
+    }
+
+    /* Hero Section */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 80px 40px;
+    }
+
+    .logo {
+      width: 120px;
+      height: 120px;
+      margin-bottom: 32px;
+      border-radius: 28px;
+      box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15);
+    }
+
+    .hero h1 {
+      font-size: 4rem;
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 24px;
+    }
+
+    .hero p {
+      font-size: 1.75rem;
+      color: #6B7280;
+      margin-bottom: 60px;
+    }
+
+    .phone-mockups {
+      display: flex;
+      gap: 40px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .phone-hero {
+      width: 280px;
+      border-radius: 32px;
+      box-shadow: 0 30px 80px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .phone-hero:hover {
+      transform: translateY(-12px);
+    }
+
+    .phone-hero:nth-child(2) {
+      transform: translateY(-30px);
+    }
+
+    .phone-hero:nth-child(2):hover {
+      transform: translateY(-42px);
+    }
+
+    /* Section Styles */
+    section {
+      padding: 120px 40px;
+    }
+
+    section:nth-child(even) {
+      background: #F9FAFB;
+    }
+
+    .section-title {
+      font-size: 3.5rem;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 80px;
+      color: #111827;
+    }
+
+    .section-title span {
+      color: #22C55E;
+    }
+
+    /* Problem Section */
+    .problems {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .problem-card {
+      text-align: center;
+      padding: 50px 40px;
+      background: #FFFFFF;
+      border-radius: 24px;
+      box-shadow: 0 8px 40px rgba(0, 0, 0, 0.08);
+    }
+
+    .problem-icon {
+      font-size: 5rem;
+      margin-bottom: 24px;
+    }
+
+    .problem-card h3 {
+      font-size: 1.75rem;
+      font-weight: 600;
+      margin-bottom: 16px;
+      color: #111827;
+    }
+
+    .problem-card p {
+      color: #6B7280;
+      font-size: 1.25rem;
+      line-height: 1.7;
+    }
+
+    /* Feature Row - Large single image */
+    .feature-row {
+      display: flex;
+      align-items: center;
+      gap: 100px;
+      max-width: 1300px;
+      margin: 0 auto 120px;
+    }
+
+    .feature-row:last-child {
+      margin-bottom: 0;
+    }
+
+    .feature-row.reverse {
+      flex-direction: row-reverse;
+    }
+
+    .feature-image {
+      flex: 0 0 auto;
+    }
+
+    .feature-image img {
+      width: 400px;
+      border-radius: 40px;
+      box-shadow: 0 40px 100px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .feature-image img:hover {
+      transform: scale(1.03);
+    }
+
+    .feature-content {
+      flex: 1;
+    }
+
+    .feature-content h3 {
+      font-size: 2.75rem;
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 24px;
+    }
+
+    .feature-content p {
+      font-size: 1.5rem;
+      color: #6B7280;
+      line-height: 1.8;
+    }
+
+    /* Role Badge */
+    .role-header {
+      text-align: center;
+      margin-bottom: 80px;
+    }
+
+    .role-badge {
+      display: inline-block;
+      padding: 12px 32px;
+      border-radius: 100px;
+      font-size: 1.125rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .role-badge.trainer {
+      background: #DCFCE7;
+      color: #166534;
+    }
+
+    .role-badge.parent {
+      background: #DBEAFE;
+      color: #1E40AF;
+    }
+
+    .role-badge.player {
+      background: #FEF3C7;
+      color: #92400E;
+    }
+
+    /* Steps Section */
+    .steps {
+      display: flex;
+      justify-content: center;
+      gap: 80px;
+      flex-wrap: wrap;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .step {
+      text-align: center;
+      position: relative;
+    }
+
+    .step:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      top: 50px;
+      right: -50px;
+      width: 30px;
+      height: 3px;
+      background: #E5E7EB;
+    }
+
+    .step-number {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background: #22C55E;
+      color: white;
+      font-size: 2.5rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 24px;
+    }
+
+    .step h4 {
+      font-size: 1.75rem;
+      font-weight: 600;
+      color: #111827;
+      margin-bottom: 12px;
+    }
+
+    .step p {
+      color: #6B7280;
+      font-size: 1.25rem;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 60px 40px;
+      background: #111827;
+      color: white;
+    }
+
+    footer img {
+      width: 64px;
+      height: 64px;
+      border-radius: 16px;
+      margin-bottom: 20px;
+    }
+
+    footer p {
+      opacity: 0.7;
+      font-size: 1.25rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+
+      .hero p {
+        font-size: 1.25rem;
+      }
+
+      .phone-hero {
+        width: 220px;
+      }
+
+      .section-title {
+        font-size: 2.5rem;
+      }
+
+      .feature-row,
+      .feature-row.reverse {
+        flex-direction: column;
+        text-align: center;
+        gap: 50px;
+      }
+
+      .feature-image img {
+        width: 320px;
+      }
+
+      .feature-content h3 {
+        font-size: 2rem;
+      }
+
+      .feature-content p {
+        font-size: 1.25rem;
+      }
+
+      .step:not(:last-child)::after {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero -->
+  <section class="hero">
+    <img src="../rs-icon.png" alt="RS Football Academy" class="logo">
+    <h1>Aplikacja dla akademii piłkarskich</h1>
+    <p>Koniec z chaosem. Proste zarządzanie treningami.</p>
+    <div class="phone-mockups">
+      <img src="../images/02_trainer_schedule.png" alt="Widok trenera" class="phone-hero">
+      <img src="../images/08_parent_home.png" alt="Widok rodzica" class="phone-hero">
+      <img src="../images/13_player_schedule.png" alt="Widok zawodnika" class="phone-hero">
+    </div>
+  </section>
+
+  <!-- Problem -->
+  <section>
+    <div class="container">
+      <h2 class="section-title">Znasz te <span>problemy</span>?</h2>
+      <div class="problems">
+        <div class="problem-card">
+          <div class="problem-icon">💬</div>
+          <h3>Chaos na WhatsApp</h3>
+          <p>Setki wiadomości, ważne info ginie w potoku. Kto potwierdził? Kto nie odpisał?</p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-icon">📋</div>
+          <h3>Ręczne listy obecności</h3>
+          <p>Papierowe kartki, które się gubią. Zero historii, zero statystyk.</p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-icon">👨‍👩‍👧</div>
+          <h3>Rodzice nie wiedzą co się dzieje</h3>
+          <p>Ciągłe pytania: "O której trening?", "Czy jest jutro?", "Jak idzie mojemu dziecku?"</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trainer -->
+  <section>
+    <div class="container">
+      <div class="role-header">
+        <span class="role-badge trainer">Panel trenera</span>
+        <h2 class="section-title">Dla <span>Trenera</span></h2>
+      </div>
+
+      <div class="feature-row">
+        <div class="feature-image">
+          <img src="../images/02_trainer_schedule.png" alt="Harmonogram treningów">
+        </div>
+        <div class="feature-content">
+          <h3>Harmonogram treningów</h3>
+          <p>Wszystkie treningi w jednym miejscu. Przejrzysty kalendarz z podziałem na drużyny. Widzisz od razu co masz danego dnia, tygodnia, miesiąca.</p>
+        </div>
+      </div>
+
+      <div class="feature-row reverse">
+        <div class="feature-image">
+          <img src="../images/03_trainer_session_bottomsheet.png" alt="Potwierdzenia obecności">
+        </div>
+        <div class="feature-content">
+          <h3>Kto potwierdził obecność</h3>
+          <p>Zobacz od razu kto przyjdzie na trening, a kto jeszcze nie odpowiedział. Koniec z liczeniem odpowiedzi na WhatsApp.</p>
+        </div>
+      </div>
+
+      <div class="feature-row">
+        <div class="feature-image">
+          <img src="../images/17_trainer_active_session.png" alt="Aktywna sesja">
+        </div>
+        <div class="feature-content">
+          <h3>Aktywna sesja treningowa</h3>
+          <p>Trening w trakcie? Masz wszystko pod ręką. Szybki dostęp do listy zawodników, obecności i notatek.</p>
+        </div>
+      </div>
+
+      <div class="feature-row reverse">
+        <div class="feature-image">
+          <img src="../images/18_trainer_attendance_sheet.png" alt="Lista obecności">
+        </div>
+        <div class="feature-content">
+          <h3>Cyfrowa lista obecności</h3>
+          <p>Jeden klik zamiast ręcznego wypisywania. Historia obecności zapisana automatycznie. Statystyki na wyciągnięcie ręki.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Parent -->
+  <section>
+    <div class="container">
+      <div class="role-header">
+        <span class="role-badge parent">Panel rodzica</span>
+        <h2 class="section-title">Dla <span>Rodzica</span></h2>
+      </div>
+
+      <div class="feature-row">
+        <div class="feature-image">
+          <img src="../images/08_parent_home.png" alt="Dashboard rodzica">
+        </div>
+        <div class="feature-content">
+          <h3>Wszystko w jednym miejscu</h3>
+          <p>Dashboard z najważniejszymi informacjami. Nadchodzące treningi, powiadomienia i aktualności od klubu. Zero szukania po grupach.</p>
+        </div>
+      </div>
+
+      <div class="feature-row reverse">
+        <div class="feature-image">
+          <img src="../images/10_parent_schedule.png" alt="Potwierdzanie obecności">
+        </div>
+        <div class="feature-content">
+          <h3>Potwierdzanie jednym kliknięciem</h3>
+          <p>Szybko i wygodnie potwierdź obecność dziecka. Bez pisania wiadomości, bez szukania odpowiedniego wątku.</p>
+        </div>
+      </div>
+
+      <div class="feature-row">
+        <div class="feature-image">
+          <img src="../images/22_parent_progress.png" alt="Postępy dziecka">
+        </div>
+        <div class="feature-content">
+          <h3>Śledzenie postępów dziecka</h3>
+          <p>Zobacz jak rozwija się Twoje dziecko. Notatki od trenera, historia obecności, osiągnięcia. Bądź na bieżąco z rozwojem.</p>
+        </div>
+      </div>
+
+      <div class="feature-row reverse">
+        <div class="feature-image">
+          <img src="../images/09_parent_feed.png" alt="Aktualności">
+        </div>
+        <div class="feature-content">
+          <h3>Aktualności od trenera</h3>
+          <p>Wszystkie ważne informacje w jednym miejscu. Powiadomienia o zmianach, odwołanych treningach, wydarzeniach klubowych.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Player -->
+  <section>
+    <div class="container">
+      <div class="role-header">
+        <span class="role-badge player">Panel zawodnika</span>
+        <h2 class="section-title">Dla <span>Zawodnika</span></h2>
+      </div>
+
+      <div class="feature-row">
+        <div class="feature-image">
+          <img src="../images/13_player_schedule.png" alt="Harmonogram z serią">
+        </div>
+        <div class="feature-content">
+          <h3>Seria obecności</h3>
+          <p>Gamifikacja w akcji! Utrzymuj swoją serię treningów. Ile treningów z rzędu dasz radę? Motywacja do regularnego przychodzenia.</p>
+        </div>
+      </div>
+
+      <div class="feature-row reverse">
+        <div class="feature-image">
+          <img src="../images/14_player_profile.png" alt="Profil zawodnika">
+        </div>
+        <div class="feature-content">
+          <h3>Twój profil</h3>
+          <p>Numer na koszulce, drużyna, pozycja. Twoja karta zawodnika w cyfrowej formie. Wszystkie informacje o Tobie w jednym miejscu.</p>
+        </div>
+      </div>
+
+      <div class="feature-row">
+        <div class="feature-image">
+          <img src="../images/15_player_feed.png" alt="Aktualności">
+        </div>
+        <div class="feature-content">
+          <h3>Aktualności</h3>
+          <p>Informacje od trenera i klubu. Bądź na bieżąco z tym co się dzieje w akademii. Nie przegap żadnej ważnej informacji.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How to Start -->
+  <section>
+    <div class="container">
+      <h2 class="section-title">Jak <span>zacząć</span>?</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <h4>Pobierz</h4>
+          <p>Aplikacja na iOS i Android</p>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <h4>Zaloguj</h4>
+          <p>Użyj kodu od klubu</p>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <h4>Gotowe!</h4>
+          <p>Wszystko działa od razu</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <img src="../rs-icon.png" alt="RS Football Academy">
+    <p>RS Football Academy</p>
+  </footer>
+</body>
+</html>

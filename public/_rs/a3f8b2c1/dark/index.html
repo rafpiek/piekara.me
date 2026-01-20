@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>RS Football Academy - Aplikacja dla akademii piłkarskich</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #0F172A;
+      color: #F1F5F9;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 40px;
+    }
+
+    /* Hero Section */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 80px 40px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle at 30% 30%, rgba(34, 197, 94, 0.15) 0%, transparent 50%),
+                  radial-gradient(circle at 70% 70%, rgba(212, 175, 55, 0.1) 0%, transparent 50%);
+      animation: pulse 8s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); opacity: 0.5; }
+      50% { transform: scale(1.1); opacity: 0.8; }
+    }
+
+    .logo {
+      width: 140px;
+      height: 140px;
+      margin-bottom: 40px;
+      border-radius: 32px;
+      box-shadow: 0 0 80px rgba(34, 197, 94, 0.5);
+      position: relative;
+      z-index: 1;
+      animation: glow 3s ease-in-out infinite;
+    }
+
+    @keyframes glow {
+      0%, 100% { box-shadow: 0 0 60px rgba(34, 197, 94, 0.4); }
+      50% { box-shadow: 0 0 100px rgba(34, 197, 94, 0.6); }
+    }
+
+    .hero h1 {
+      font-size: 4.5rem;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 24px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero h1 span {
+      background: linear-gradient(135deg, #22C55E, #D4AF37);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero p {
+      font-size: 1.75rem;
+      color: #94A3B8;
+      margin-bottom: 70px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .phone-mockups {
+      display: flex;
+      gap: 50px;
+      justify-content: center;
+      flex-wrap: wrap;
+      position: relative;
+      z-index: 1;
+    }
+
+    .phone-hero {
+      width: 300px;
+      border-radius: 36px;
+      box-shadow: 0 40px 100px rgba(0, 0, 0, 0.6),
+                  0 0 60px rgba(34, 197, 94, 0.25);
+      transition: all 0.4s ease;
+    }
+
+    .phone-hero:hover {
+      transform: translateY(-16px) scale(1.02);
+      box-shadow: 0 50px 120px rgba(0, 0, 0, 0.7),
+                  0 0 80px rgba(34, 197, 94, 0.35);
+    }
+
+    .phone-hero:nth-child(2) {
+      transform: translateY(-40px);
+    }
+
+    .phone-hero:nth-child(2):hover {
+      transform: translateY(-56px) scale(1.02);
+    }
+
+    /* Section Styles */
+    section {
+      padding: 140px 40px;
+      position: relative;
+    }
+
+    .section-title {
+      font-size: 3.5rem;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 80px;
+      color: #FFFFFF;
+    }
+
+    .section-title span {
+      background: linear-gradient(135deg, #22C55E, #D4AF37);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* Problem Section */
+    .problems {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 32px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .problem-card {
+      background: #1E293B;
+      border-radius: 28px;
+      padding: 50px 40px;
+      border: 1px solid #334155;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .problem-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, #22C55E, #D4AF37);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .problem-card:hover {
+      transform: translateY(-8px);
+      border-color: #22C55E;
+    }
+
+    .problem-card:hover::before {
+      opacity: 1;
+    }
+
+    .problem-icon {
+      font-size: 4.5rem;
+      margin-bottom: 28px;
+    }
+
+    .problem-card h3 {
+      font-size: 1.75rem;
+      font-weight: 600;
+      margin-bottom: 16px;
+      color: #FFFFFF;
+    }
+
+    .problem-card p {
+      color: #94A3B8;
+      font-size: 1.25rem;
+      line-height: 1.7;
+    }
+
+    /* Feature Row - Large single image */
+    .feature-row {
+      display: flex;
+      align-items: center;
+      gap: 100px;
+      max-width: 1300px;
+      margin: 0 auto 140px;
+    }
+
+    .feature-row:last-child {
+      margin-bottom: 0;
+    }
+
+    .feature-row.reverse {
+      flex-direction: row-reverse;
+    }
+
+    .feature-image {
+      flex: 0 0 auto;
+      position: relative;
+    }
+
+    .feature-image img {
+      width: 420px;
+      border-radius: 44px;
+      box-shadow: 0 50px 120px rgba(0, 0, 0, 0.6),
+                  0 0 60px rgba(34, 197, 94, 0.2);
+      transition: all 0.4s ease;
+    }
+
+    .feature-image img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 60px 140px rgba(0, 0, 0, 0.7),
+                  0 0 80px rgba(34, 197, 94, 0.3);
+    }
+
+    .feature-content {
+      flex: 1;
+    }
+
+    .feature-content h3 {
+      font-size: 3rem;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 24px;
+    }
+
+    .feature-content p {
+      font-size: 1.5rem;
+      color: #94A3B8;
+      line-height: 1.8;
+    }
+
+    /* Role Header */
+    .role-header {
+      text-align: center;
+      margin-bottom: 100px;
+    }
+
+    .role-badge {
+      display: inline-block;
+      padding: 14px 36px;
+      border-radius: 100px;
+      font-size: 1.125rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+      border: 2px solid;
+    }
+
+    .role-badge.trainer {
+      background: rgba(34, 197, 94, 0.15);
+      color: #22C55E;
+      border-color: rgba(34, 197, 94, 0.4);
+    }
+
+    .role-badge.parent {
+      background: rgba(59, 130, 246, 0.15);
+      color: #60A5FA;
+      border-color: rgba(59, 130, 246, 0.4);
+    }
+
+    .role-badge.player {
+      background: rgba(212, 175, 55, 0.15);
+      color: #D4AF37;
+      border-color: rgba(212, 175, 55, 0.4);
+    }
+
+    /* Streak Highlight */
+    .streak-highlight .feature-image img {
+      box-shadow: 0 50px 120px rgba(0, 0, 0, 0.6),
+                  0 0 80px rgba(212, 175, 55, 0.35);
+    }
+
+    .streak-badge {
+      position: absolute;
+      top: -20px;
+      right: -20px;
+      font-size: 3rem;
+      animation: bounce 1s ease-in-out infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    /* Adoption Section */
+    .adoption {
+      background: linear-gradient(135deg, #1E293B 0%, #0F172A 100%);
+      border-radius: 40px;
+      padding: 100px 60px;
+      text-align: center;
+      max-width: 1000px;
+      margin: 0 auto;
+      border: 2px solid #334155;
+    }
+
+    .adoption h3 {
+      font-size: 3rem;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 20px;
+    }
+
+    .adoption p {
+      font-size: 1.5rem;
+      color: #94A3B8;
+      margin-bottom: 60px;
+    }
+
+    .adoption-features {
+      display: flex;
+      justify-content: center;
+      gap: 70px;
+      flex-wrap: wrap;
+    }
+
+    .adoption-feature {
+      text-align: center;
+    }
+
+    .adoption-feature .icon {
+      width: 100px;
+      height: 100px;
+      border-radius: 28px;
+      background: rgba(34, 197, 94, 0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.5rem;
+      margin: 0 auto 20px;
+    }
+
+    .adoption-feature span {
+      font-size: 1.25rem;
+      color: #F1F5F9;
+      font-weight: 500;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 80px 40px;
+      border-top: 1px solid #1E293B;
+    }
+
+    footer img {
+      width: 80px;
+      height: 80px;
+      border-radius: 20px;
+      margin-bottom: 24px;
+    }
+
+    footer p {
+      color: #64748B;
+      font-size: 1.25rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+      .hero h1 {
+        font-size: 2.75rem;
+      }
+
+      .hero p {
+        font-size: 1.25rem;
+      }
+
+      .phone-hero {
+        width: 240px;
+      }
+
+      .phone-hero:nth-child(2) {
+        transform: none;
+      }
+
+      .section-title {
+        font-size: 2.5rem;
+      }
+
+      .feature-row,
+      .feature-row.reverse {
+        flex-direction: column;
+        text-align: center;
+        gap: 50px;
+      }
+
+      .feature-image img {
+        width: 340px;
+      }
+
+      .feature-content h3 {
+        font-size: 2.25rem;
+      }
+
+      .feature-content p {
+        font-size: 1.25rem;
+      }
+
+      .adoption {
+        padding: 60px 32px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero -->
+  <section class="hero">
+    <img src="../rs-icon.png" alt="RS Football Academy" class="logo">
+    <h1>Zarządzaj akademią <span>po swojemu</span></h1>
+    <p>Nowoczesna aplikacja dla trenerów, rodziców i zawodników</p>
+    <div class="phone-mockups">
+      <img src="../images/02_trainer_schedule.png" alt="Widok trenera" class="phone-hero">
+      <img src="../images/08_parent_home.png" alt="Widok rodzica" class="phone-hero">
+      <img src="../images/13_player_schedule.png" alt="Widok zawodnika" class="phone-hero">
+    </div>
+  </section>
+
+  <!-- Problem -->
+  <section>
+    <div class="container">
+      <h2 class="section-title">To już <span>przeszłość</span></h2>
+      <div class="problems">
+        <div class="problem-card">
+          <div class="problem-icon">💬</div>
+          <h3>WhatsApp to za mało</h3>
+          <p>Grupy WhatsApp się nie skalują. Informacje giną, nikt nie wie co jest aktualne.</p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-icon">📄</div>
+          <h3>Papierowe listy to prehistoria</h3>
+          <p>Bez historii, bez statystyk. Trener traci czas na administrację zamiast trenować.</p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-icon">❓</div>
+          <h3>Zero wglądu dla rodziców</h3>
+          <p>Rodzice są w ciemności. Nie wiedzą co się dzieje, jak idzie dziecku, co planujecie.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trainer -->
+  <section>
+    <div class="container">
+      <div class="role-header">
+        <span class="role-badge trainer">Pełna kontrola</span>
+        <h2 class="section-title">Panel <span>Trenera</span></h2>
+      </div>
+
+      <div class="feature-row">
+        <div class="feature-image">
+          <img src="../images/02_trainer_schedule.png" alt="Harmonogram treningów">
+        </div>
+        <div class="feature-content">
+          <h3>Harmonogram</h3>
+          <p>Wszystkie treningi jak na dłoni. Przejrzysty widok tygodniowy, filtrowanie po drużynach. Wiesz dokładnie co masz zaplanowane.</p>
+        </div>
+      </div>
+
+      <div class="feature-row reverse">
+        <div class="feature-image">
+          <img src="../images/03_trainer_session_bottomsheet.png" alt="Potwierdzenia">
+        </div>
+        <div class="feature-content">
+          <h3>Potwierdzenia</h3>
+          <p>Wiesz kto przyjdzie zanim trening się zacznie. Lista potwierdzonych, niepotwierdzonych i nieobecnych. Koniec z zgadywaniem.</p>
+        </div>
+      </div>
+
+      <div class="feature-row">
+        <div class="feature-image">
+          <img src="../images/17_trainer_active_session.png" alt="Aktywna sesja">
+        </div>
+        <div class="feature-content">
+          <h3>Aktywna sesja</h3>
+          <p>Trening w trakcie? Masz wszystko pod ręką. Szybki dostęp do listy zawodników, notatek i obecności. Zero rozpraszaczy.</p>
+        </div>
+      </div>
+
+      <div class="feature-row reverse">
+        <div class="feature-image">
+          <img src="../images/18_trainer_attendance_sheet.png" alt="Lista obecności">
+        </div>
+        <div class="feature-content">
+          <h3>Cyfrowa obecność</h3>
+          <p>Klik, klik, klik. Gotowe. Żadnego papierowania, żadnego przepisywania. Historia zapisana automatycznie, statystyki generowane same.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Parent -->
+  <section>
+    <div class="container">
+      <div class="role-header">
+        <span class="role-badge parent">Zawsze w temacie</span>
+        <h2 class="section-title">Panel <span>Rodzica</span></h2>
+      </div>
+
+      <div class="feature-row">
+        <div class="feature-image">
+          <img src="../images/08_parent_home.png" alt="Dashboard">
+        </div>
+        <div class="feature-content">
+          <h3>Dashboard</h3>
+          <p>Wszystko co musisz wiedzieć w jednym miejscu. Nadchodzące treningi, powiadomienia, aktualności. Zero szukania informacji.</p>
+        </div>
+      </div>
+
+      <div class="feature-row reverse">
+        <div class="feature-image">
+          <img src="../images/10_parent_schedule.png" alt="Obecność">
+        </div>
+        <div class="feature-content">
+          <h3>Jednym kliknięciem</h3>
+          <p>Potwierdź obecność w sekundę. Bez pisania wiadomości, bez szukania odpowiedniego wątku. Szybko, prosto, wygodnie.</p>
+        </div>
+      </div>
+
+      <div class="feature-row">
+        <div class="feature-image">
+          <img src="../images/22_parent_progress.png" alt="Postępy">
+        </div>
+        <div class="feature-content">
+          <h3>Postępy dziecka</h3>
+          <p>Zobacz jak się rozwija Twoje dziecko. Notatki od trenera, historia obecności, oceny i feedback. Bądź częścią procesu.</p>
+        </div>
+      </div>
+
+      <div class="feature-row reverse">
+        <div class="feature-image">
+          <img src="../images/09_parent_feed.png" alt="Aktualności">
+        </div>
+        <div class="feature-content">
+          <h3>Aktualności</h3>
+          <p>Żadna informacja Ci nie umknie. Powiadomienia o zmianach, odwołanych treningach, ważnych wydarzeniach. Wszystko w jednym miejscu.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Player -->
+  <section>
+    <div class="container">
+      <div class="role-header">
+        <span class="role-badge player">Motywacja na maxa</span>
+        <h2 class="section-title">Panel <span>Zawodnika</span></h2>
+      </div>
+
+      <div class="feature-row streak-highlight">
+        <div class="feature-image">
+          <img src="../images/13_player_schedule.png" alt="Seria obecności">
+          <span class="streak-badge">🔥</span>
+        </div>
+        <div class="feature-content">
+          <h3>Seria obecności</h3>
+          <p>Ile treningów z rzędu? Utrzymaj passę! Gamifikacja która motywuje do regularnego przychodzenia. Rywalizuj ze sobą i kolegami.</p>
+        </div>
+      </div>
+
+      <div class="feature-row reverse">
+        <div class="feature-image">
+          <img src="../images/14_player_profile.png" alt="Profil">
+        </div>
+        <div class="feature-content">
+          <h3>Twój profil</h3>
+          <p>Numer na koszulce, Twoja drużyna, pozycja. Cyfrowa karta zawodnika. Wszystkie informacje o Tobie w jednym miejscu.</p>
+        </div>
+      </div>
+
+      <div class="feature-row">
+        <div class="feature-image">
+          <img src="../images/15_player_feed.png" alt="Aktualności">
+        </div>
+        <div class="feature-content">
+          <h3>Aktualności</h3>
+          <p>Co nowego w klubie? Informacje od trenera, wydarzenia, ważne ogłoszenia. Bądź na bieżąco z życiem akademii.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Adoption -->
+  <section>
+    <div class="container">
+      <div class="adoption">
+        <h3>Prosta adopcja</h3>
+        <p>Bez szkoleń, bez integracji, bez komplikacji. Po prostu działa.</p>
+        <div class="adoption-features">
+          <div class="adoption-feature">
+            <div class="icon">📱</div>
+            <span>Pobierz aplikację</span>
+          </div>
+          <div class="adoption-feature">
+            <div class="icon">🔑</div>
+            <span>Użyj kodu klubu</span>
+          </div>
+          <div class="adoption-feature">
+            <div class="icon">✅</div>
+            <span>Gotowe!</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <img src="../rs-icon.png" alt="RS Football Academy">
+    <p>RS Football Academy</p>
+  </footer>
+</body>
+</html>
